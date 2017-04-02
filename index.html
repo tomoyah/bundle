@@ -11,26 +11,102 @@
 </head>
 <body>
 
+<div data-role="page" id="signup-signin">
+    <div data-role="content">
+        <h1>Bundle Signup Sign in</h1>
+
+        <!-- TODO 1: make these links appear as mobile buttons using the ui-btn class -->
+        <a class="ui-btn" href="#signin">Signin</a>
+        <a class="ui-btn" href="#signup1">Signup</a>
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>visit us at <a href="http://cs179.org" target="_blank">cs179.org</a></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="signup1">
+    <div data-role="content">
+        <h1> Signup1 </h1>
+
+        <!-- TODO 1: make these links appear as mobile buttons using the ui-btn class -->
+        <a class="ui-btn" href="#signup2">Next</a>
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>visit us at <a href="http://cs179.org" target="_blank">cs179.org</a></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="signup2">
+    <div data-role="content">
+        <h1> Signup2 </h1>
+
+        <!-- TODO 1: make these links appear as mobile buttons using the ui-btn class -->
+        <a class="ui-btn" href="#search">Done</a>
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>visit us at <a href="http://cs179.org" target="_blank">cs179.org</a></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="signin">
+    <div data-role="content">
+        <h1> Signin </h1>
+
+        <!-- TODO 1: make these links appear as mobile buttons using the ui-btn class -->
+        <a class="ui-btn" href="#search">Done</a>
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>visit us at <a href="http://cs179.org" target="_blank">cs179.org</a></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
 
 
-<div data-role="page" id="home">
+<div data-role="page" id="search">
+  <div data-role="header">
+      <h1>Search</h1>
+      <div data-role="navbar">
+          <ul>
+              <li><a href="#menu" class="ui-btn-active ui-state-persist">Menu</a></li>
+              <li><a href="#messages">Messages</a></li>
+          </ul>
+      </div>
+  </div><!-- /header -->
+
+    <div data-role="content">
+        <h1> Search </h1>
+
+        <!-- TODO 1: make these links appear as mobile buttons using the ui-btn class -->
+        <a class="ui-btn" href="#profile1">Profile1</a>
+        <a class="ui-btn" href="#profile2">Profile2</a>
+        <a class="ui-btn" href="#profile3">Profile3</a>
+
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>visit us at <a href="http://cs179.org" target="_blank">cs179.org</a></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="menu">
     <div data-role="header">
-        <h1>CS 179 Home</h1>
+        <h1>Menu</h1>
         <div data-role="navbar">
             <ul>
-                <li><a href="#home" class="ui-btn-active ui-state-persist">Home</a></li>
-                <!-- TODO 4a: add an appropriate href value to the code below such that clicking the button will take you to the team page -->
-                <li><a href="#team">Team</a></li>
+                <li><a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back">Back</a></li>
+                <li><a href="#messages">Messages</a></li>
             </ul>
         </div>
     </div><!-- /header -->
 
     <div data-role="content">
-        <h1>CS 179:  Design of Useful and Usable Interactive Systems, Spring 2017</h1>
-
-        <!-- TODO 1: make these links appear as mobile buttons using the ui-btn class -->
-        <a class="ui-btn" href="http://cs179.org">Course Website</a>
-        <a class="ui-btn" href="#team">Team</a>
+        <a class="ui-btn" href="#search">Search</a>
+        <a class="ui-btn" href="#matches">Previous Matches</a>
+        <a class="ui-btn" href="#verification">Verification</a>
+        <a class="ui-btn" href="#preferences">Preferences</a>
     </div><!-- /content -->
 
     <div data-role="footer">
@@ -38,31 +114,21 @@
     </div><!-- /footer -->
 </div><!-- /page -->
 
-
-<div data-role="page" id="team">
-
+<div data-role="page" id="verification">
     <div data-role="header">
-        <h1>CS 179 Staff</h1>
-        <!-- TODO 4b: add a navigation bar to this page like the one on the Home page. Make sure that the "team" button is the active one-->
+        <h1>Verification</h1>
         <div data-role="navbar">
             <ul>
-                <li><a href="#team" class="ui-btn-active ui-state-persist">Team</a></li>
-                <li><a href="#home">Home</a></li>
+                <li><a href="#menu" class="ui-btn-active ui-state-persist">Menu</a></li>
+                <li><a href="#messages">Messages</a></li>
             </ul>
         </div>
-    </div>
+    </div><!-- /header -->
 
     <div data-role="content">
-        <h3>CS 179 staff:</h3>
-        <!--TODO 2a: make the list look nicer by defining it as a listview -->
-        <!--TODO 3: make the list filterable using a data-filter -->
-        <ul data-role="listview" data-filter="true" data-inset="true">
-            <li><a href="#ofra">Ofra</a></li>
-            <li><a href="">Evan</a></li>
-            <li><a href="">Joan</a></li>
-            <li><a href="#amy" data-transition="flip">Amy</a></li>
-            <li><a href="">Zeerak</a></li>
-        </ul>
+      Here's the page where you verify. Input your information.
+      <!-- Textbox -->
+      <a class="ui-btn" href="">Verify!</a>
     </div><!-- /content -->
 
     <div data-role="footer">
@@ -70,39 +136,199 @@
     </div><!-- /footer -->
 </div><!-- /page -->
 
-<div data-role="page" id="ofra">
+<div data-role="page" id="preferences">
     <div data-role="header">
-        <!-- TODO 5: add a back button to the header; include the back icon on your back button -->
-        <a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back">Back</a>
-        <h1>Ofra</h1>
-    </div>
+        <h1>Preferences</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#menu" class="ui-btn-active ui-state-persist">Menu</a></li>
+                <li><a href="#messages">Messages</a></li>
+            </ul>
+        </div>
+    </div><!-- /header -->
+
     <div data-role="content">
-        <h3>Ofra is the instructor for CS 179.</h3>
-        <img src="pics/t3.jpg" alt="Ofra" width="150px">
-    </div>
+      Input your preferences here. Copy formatting over from signup 1 and 2
+      <!-- Textbox -->
+      <a class="ui-btn" href="">Update Preferences!</a>
+    </div><!-- /content -->
 
     <div data-role="footer">
         <h4>visit us at <a href="http://cs179.org" target="_blank">cs179.org</a></h4>
     </div><!-- /footer -->
-</div>
+</div><!-- /page -->
 
-<!--TODO 6: add a page for your studio TF, similar to the "ofra" page, and make the list in the "team" page link to it from the appropriate button -->
-<div data-role="page" id="amy">
+<div data-role="page" id="matches">
     <div data-role="header">
-        <a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back">Back</a>
-        <h1>Amy</h1>
-    </div>
+        <h1>Previous Matches</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#menu" class="ui-btn-active ui-state-persist">Menu</a></li>
+                <li><a href="#messages">Messages</a></li>
+            </ul>
+        </div>
+    </div><!-- /header -->
+
     <div data-role="content">
-        <h3>Amy is my studio TF.</h3>
-        <img src="pics/t4.jpg" alt="Amy" width="150px">
-    </div>
+        <a class="ui-btn" href="#profile1">Profile 1</a>
+        <a class="ui-btn" href="#profile2">Profile 2</a>
+        <a class="ui-btn" href="#profile3">Profile 3</a>
+        <a class="ui-btn" href="#search">Search</a>
+    </div><!-- /content -->
 
     <div data-role="footer">
         <h4>visit us at <a href="http://cs179.org" target="_blank">cs179.org</a></h4>
     </div><!-- /footer -->
-</div>
+</div><!-- /page -->
 
-<!--TODO 7: add a jQuery mobile page transition to the link from the "team" page to your TF page -->
+<div data-role="page" id="messages">
+    <div data-role="header">
+        <h1>Messages</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#menu" class="ui-btn-active ui-state-persist">Menu</a></li>
+            </ul>
+        </div>
+    </div><!-- /header -->
+
+    <div data-role="content">
+        <a class="ui-btn" href="#chat1">Chat 1</a>
+        <a class="ui-btn" href="#chat2">Chat 2</a>
+        <a class="ui-btn" href="#chat3">Chat 3</a>
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>visit us at <a href="http://cs179.org" target="_blank">cs179.org</a></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="chat1">
+    <div data-role="header">
+        <h1>Chat 1</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#menu" class="ui-btn-active ui-state-persist">Menu</a></li>
+            </ul>
+        </div>
+    </div><!-- /header -->
+
+    <div data-role="content">
+      <a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back">Back</a>
+      <a href="#profile1" class="ui-btn-active ui-state-persist">See Profile</a>
+      MESSAGE CONTENT 1
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>visit us at <a href="http://cs179.org" target="_blank">cs179.org</a></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+
+<div data-role="page" id="chat2">
+    <div data-role="header">
+        <h1>Chat2</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#menu" class="ui-btn-active ui-state-persist">Menu</a></li>
+            </ul>
+        </div>
+    </div><!-- /header -->
+
+    <div data-role="content">
+      <a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back">Back</a>
+      <a href="#profile2" class="ui-btn-active ui-state-persist">See Profile</a>
+      MESSAGE CONTENT 2
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>visit us at <a href="http://cs179.org" target="_blank">cs179.org</a></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+
+<div data-role="page" id="chat3">
+    <div data-role="header">
+        <h1>Chat3</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#menu" class="ui-btn-active ui-state-persist">Menu</a></li>
+            </ul>
+        </div>
+    </div><!-- /header -->
+
+    <div data-role="content">
+      <a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back">Back</a>
+      <a href="#profile3" class="ui-btn-active ui-state-persist">See Profile</a>
+      MESSAGE CONTENT 3
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>visit us at <a href="http://cs179.org" target="_blank">cs179.org</a></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="profile1">
+    <div data-role="header">
+        <h1>Profile1</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#menu" class="ui-btn-active ui-state-persist">Menu</a></li>
+                <li><a href="#messages">Messages</a></li>
+            </ul>
+        </div>
+    </div><!-- /header -->
+
+    <div data-role="content">
+      <a class="ui-btn" href="">Match</a>
+      <a class="ui-btn" href="#chat1">Message</a>
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>visit us at <a href="http://cs179.org" target="_blank">cs179.org</a></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="profile2">
+    <div data-role="header">
+        <h1>Profile2</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#menu" class="ui-btn-active ui-state-persist">Menu</a></li>
+                <li><a href="#messages">Messages</a></li>
+            </ul>
+        </div>
+    </div><!-- /header -->
+
+    <div data-role="content">
+      <a class="ui-btn" href="">Match</a>
+      <a class="ui-btn" href="#chat2">Message</a>
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>visit us at <a href="http://cs179.org" target="_blank">cs179.org</a></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="profile3">
+    <div data-role="header">
+        <h1>Profile3</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#menu" class="ui-btn-active ui-state-persist">Menu</a></li>
+                <li><a href="#messages">Messages</a></li>
+            </ul>
+        </div>
+    </div><!-- /header -->
+
+    <div data-role="content">
+      <a class="ui-btn" href="">Match</a>
+      <a class="ui-btn" href="#chat3">Message</a>
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>visit us at <a href="http://cs179.org" target="_blank">cs179.org</a></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
 
 </body>
 </html>
