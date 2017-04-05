@@ -88,7 +88,7 @@
         <h1>Menu</h1>
         <div data-role="navbar">
             <ul>
-                <li><a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back">Back</a></li>
+                <li><a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back"></a></li>
                 <li><a href="#messages">Messages</a></li>
             </ul>
         </div>
@@ -98,7 +98,7 @@
         <a class="ui-btn" href="#search">Search</a>
         <a class="ui-btn" href="#matches">Previous Matches</a>
         <a class="ui-btn" href="#verification">Verification</a>
-        <a class="ui-btn" href="#preferences">Preferences</a>
+        <a class="ui-btn" href="#preferences">Buddy Preferences</a>
     </div><!-- /content -->
 
     <div data-role="footer">
@@ -183,11 +183,22 @@
         </div>
     </div><!-- /header -->
 
-    <div data-role="content">
-        <a class="ui-btn" href="#chat1">Chat 1</a>
-        <a class="ui-btn" href="#chat2">Chat 2</a>
-        <a class="ui-btn" href="#chat3">Chat 3</a>
+    <div>
+        <img src="pics/t1.jpg" alt="profile1" width="50px"> 
+        <a href="#profile1">Profile 1</a>
+        <a data-inline="true" data-role="button" href="#chat1" >Chat 1</a>
     </div><!-- /content -->
+    <div>
+        <img src="pics/t2.jpg" alt="profile1" width="50px"> 
+        <a href="#profile2">Profile 2</a>
+        <a data-inline="true" data-role="button" href="#chat2">Chat 2</a>
+    </div><!-- /content -->
+    <div>
+        <img src="pics/t3.jpg" alt="profile1" width="50px"> 
+        <a href="#profile3">Profile 3</a>
+        <a data-inline="true" data-role="button" href="#chat3">Chat 3</a>
+    </div><!-- /content -->
+
 
     <div data-role="footer">
         <h4>visit us at <a href="http://cs179.org" target="_blank">cs179.org</a></h4>
@@ -199,16 +210,23 @@
         <h1>Chat 1</h1>
         <div data-role="navbar">
             <ul>
+                <li><a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back"></a></li>
                 <li><a href="#menu" class="ui-btn-active ui-state-persist">Menu</a></li>
             </ul>
         </div>
     </div><!-- /header -->
 
     <div data-role="content">
-      <a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back">Back</a>
+
       <a href="#profile1" class="ui-btn-active ui-state-persist">See Profile</a>
-      MESSAGE CONTENT 1
+      <div>
+      Person 1: Hey! I'm looking for a roomate to split a room for a night!
+      </div>
     </div><!-- /content -->
+    <div data-role="fieldcontain">
+            <label for="name">Your Message:</label>
+            <input type="text" name="name" id="name" value=""  />
+        </div>  
 
     <div data-role="footer">
         <h4>visit us at <a href="http://cs179.org" target="_blank">cs179.org</a></h4>
@@ -227,10 +245,16 @@
     </div><!-- /header -->
 
     <div data-role="content">
-      <a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back">Back</a>
+
       <a href="#profile2" class="ui-btn-active ui-state-persist">See Profile</a>
-      MESSAGE CONTENT 2
+      <div>
+      Person 2: Hey! I'm looking for a roomate to split a room for a night!
+      </div>
     </div><!-- /content -->
+    <div data-role="fieldcontain">
+            <label for="name">Your Message:</label>
+            <input type="text" name="name" id="name" value=""  />
+        </div>  
 
     <div data-role="footer">
         <h4>visit us at <a href="http://cs179.org" target="_blank">cs179.org</a></h4>
@@ -249,10 +273,16 @@
     </div><!-- /header -->
 
     <div data-role="content">
-      <a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back">Back</a>
+
       <a href="#profile3" class="ui-btn-active ui-state-persist">See Profile</a>
-      MESSAGE CONTENT 3
+      <div>
+      Person 3: Hey! I'm looking for a roomate to split a room for a night!
+      </div>
     </div><!-- /content -->
+    <div data-role="fieldcontain">
+            <label for="name">Your Message:</label>
+            <input type="text" name="name" id="name" value=""  />
+        </div>  
 
     <div data-role="footer">
         <h4>visit us at <a href="http://cs179.org" target="_blank">cs179.org</a></h4>
