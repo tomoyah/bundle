@@ -26,6 +26,35 @@
 <div data-role="page" id="signup1">
     <div data-role="content">
         <h1> What kind of buddy are you looking for? </h1>
+        <form>
+            <div data-role="rangeslider">
+                <label for="range-1a"> Age Range: </label>
+                    <input type="range" name="range-1a" id="range-1a" min="0" max="100" value="40">
+                    <label for="range-1b">Rangeslider:</label>
+                    <input type="range" name="range-1b" id="range-1b" min="0" max="100" value="80">
+            </div>
+        </form>
+                <form>
+            <div data-role="rangeslider">
+                <label for="range-1a"> Find matches within (in miles): </label>
+                    <input type="range" name="range-1a" id="range-1a" min="0" max="100" value="40">
+                    <label for="range-1b">Rangeslider:</label>
+                    <input type="range" name="range-1b" id="range-1b" min="0" max="100" value="80">
+            </div>
+        </form>
+        <label for="select-choice-8" class="select">Gender Pronouns:</label>
+            <select name="select-choice-8" id="select-choice-8" multiple="multiple" data-native-menu="false" data-icon="grid" data-iconpos="left">
+                <option>Choose a few options:</option>
+                <optgroup label="Gender Pronouns">
+                    <option value="male" selected="">he / his / him </option>
+                    <option value="female">she / hers / her </option>
+                    <option value="nonconforming">they / theirs / them </option>
+                     <option value="Other"> other </option>
+                </optgroup>
+            </select>
+        <label for="basic">Additional Comments:</label>
+                <input type="text" name="name" id="basic" value="Anything else you would like us to know? If you chose 'other', explain further here so we can best match you!">
+        <a class="ui-btn" href="#signup2">Next</a>
         <a class="ui-btn" href="#signup2">Next</a>
     </div><!-- /content -->
 
@@ -37,6 +66,40 @@
 <div data-role="page" id="signup2">
     <div data-role="content">
         <h1> Let's set up your account. </h1>
+        <input type="text" name="username" value="Username"> <a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-btn-icon-left ui-icon-star">Check to see if this is taken. </a>
+            <input type="text" name="password" value="Password">
+            <input type="text" name="password2" value="Confirm password">
+            Profile Picture
+            <input type="file" name="Profile Picture" id="file" value="">
+        <form>
+            <div data-role="rangeslider">
+                <label for="range-1a"> Age Range </label>
+                    <input type="range" name="range-1a" id="range-1a" min="0" max="100" value="40">
+                    <label for="range-1b">Rangeslider:</label>
+                    <input type="range" name="range-1b" id="range-1b" min="0" max="100" value="80">
+            </div>
+        </form>
+        <label for="select-choice-8" class="select">Preferred Gender Pronouns:</label>
+            <select name="select-choice-8" id="select-choice-8" multiple="multiple" data-native-menu="false" data-icon="grid" data-iconpos="left">
+                <option></option>
+                <optgroup label="Gender Pronouns">
+                    <option value="male" selected="">he / his / him </option>
+                    <option value="female">she / hers / her </option>
+                    <option value="nonconforming">they / theirs / them </option>
+                     <option value="Other"> other </option>
+                </optgroup>
+            </select>
+        <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+            <legend>What activities you are interested in (select all that apply):</legend>
+            <input type="checkbox" name="checkbox-6" id="checkbox-6">
+            <label for="checkbox-6">Camping Out</label>
+            <input type="checkbox" name="checkbox-7" id="checkbox-7" checked="">
+            <label for="checkbox-7">Splitting a Room </label>
+            <input type="checkbox" name="checkbox-8" id="checkbox-8">
+            <label for="checkbox-8">Sharing a Meal </label>
+        </fieldset>
+        <label for="basic">Additional Comments:</label>
+                <input type="text" name="name" id="basic" value="Anything else you would like us to know? If you chose 'other', explain further here so we can best match you!">
         <a class="ui-btn" href="#search">Done</a>
     </div><!-- /content -->
 
@@ -101,6 +164,7 @@
         <a class="ui-btn" href="#matches">Previous Matches</a>
         <a class="ui-btn" href="#verification">Verification</a>
         <a class="ui-btn" href="#preferences">Buddy Preferences</a>
+        <a class="ui-btn" href="#signup-signin">Log Out </a>
     </div><!-- /content -->
 
     <div data-role="footer">
@@ -142,8 +206,43 @@
     </div><!-- /header -->
 
     <div data-role="content">
-      Input your preferences here. Copy formatting over from signup 1 and 2
-      <!-- Textbox -->
+      <div data-role="navbar">
+            <ul>
+                <li><a href="#menu" class="ui-btn-active ui-state-persist">Menu</a></li>
+                <li><a href="#messages">Messages</a></li>
+            </ul>
+        </div>
+    </div><!-- /header -->
+
+    <div data-role="content">
+        <div data-role="rangeslider">
+                <label for="range-1a"> Age Range </label>
+                    <input type="range" name="range-1a" id="range-1a" min="0" max="100" value="40">
+                    <label for="range-1b">Rangeslider:</label>
+                    <input type="range" name="range-1b" id="range-1b" min="0" max="100" value="80">
+            </div>
+        </form>
+        <label for="select-choice-8" class="select">Preferred Gender Pronouns:</label>
+            <select name="select-choice-8" id="select-choice-8" multiple="multiple" data-native-menu="false" data-icon="grid" data-iconpos="left">
+                <option></option>
+                <optgroup label="Gender Pronouns">
+                    <option value="male" selected="">he / his / him </option>
+                    <option value="female">she / hers / her </option>
+                    <option value="nonconforming">they / theirs / them </option>
+                     <option value="Other"> other </option>
+                </optgroup>
+            </select>
+        <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+            <legend>What activities you are interested in (select all that apply):</legend>
+            <input type="checkbox" name="checkbox-6" id="checkbox-6">
+            <label for="checkbox-6">Camping Out</label>
+            <input type="checkbox" name="checkbox-7" id="checkbox-7" checked="">
+            <label for="checkbox-7">Splitting a Room </label>
+            <input type="checkbox" name="checkbox-8" id="checkbox-8">
+            <label for="checkbox-8">Sharing a Meal </label>
+        </fieldset>
+        <label for="basic">Additional Comments:</label>
+                <input type="text" name="name" id="basic" value="Anything else you would like us to know? If you chose 'other', explain further here so we can best match you!"><!-- Textbox -->
       <a class="ui-btn" href="">Update Preferences!</a>
     </div><!-- /content -->
 
