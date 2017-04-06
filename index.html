@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="indexjs.js"></script>
 </head>
 <body>
 
@@ -297,6 +299,8 @@
     </div><!-- /footer -->
 </div><!-- /page -->
 
+<!-- Javascript for the messaging feature -->
+
 <div data-role="page" id="chat1">
     <div data-role="header">
         <h1>Chat 1</h1>
@@ -310,15 +314,23 @@
 
     <div data-role="content">
 
-      <a href="#profile1" class="ui-btn-active ui-state-persist">See Profile</a>
-      <div>
-      Person 1: Hey! I'm looking for a roomate to split a room for a night!
+      <a href="#profile1" class="ui-btn-active ui-state-persist" data-inline="true">See Profile</a>
+      <div data-inline="true">
+      <!-- MESSAGES ARE HERE -->
+      Person 1: Heya! I'm looking for a roomate to split a room for a night!
       </div>
+      <div id="allMsgs"></div>
+
     </div><!-- /content -->
-    <div data-role="fieldcontain">
-            <label for="name">Your Message:</label>
-            <input type="text" name="name" id="name" value=""  />
-        </div>
+    <label for="name">Your Message:</label>
+    <div class="ui-grid-a">
+      <div class="ui-block-b" id="MessageArea">
+            <input type="text" id="msgarea" name="url" />
+      </div>
+      <div class="ui-block-d">
+            <button onclick="submitMessage()">Submit</button>
+      </div>
+</div>
 
     <div data-role="footer">
         <h4>Bundle</a></h4>
