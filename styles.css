@@ -5,3 +5,15 @@
   width: 70px;
   height: 70px; 
 }
+
+.nameProfile{
+  font: serif;
+  text-align: center;
+}
+
+.center{
+	width: 600px;
+	margin: auto;
+}
+
+

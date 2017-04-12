@@ -191,6 +191,7 @@
     </div><!-- /footer -->
 </div><!-- /page -->
 
+<!-- VERIFICATION -->
 <div data-role="page" id="verification">
     <div data-role="header">
         <h1>Verification</h1>
@@ -201,17 +202,54 @@
             </ul>
         </div>
     </div><!-- /header -->
-
     <div data-role="content">
-      Here's the page where you verify. Input your information.
+      To verify your identity, we ask that you either input your driver license number, or your basic information. After you complete this form, one of our volunteers will get in touch with you. 
+      <div data-role="fieldcontain">
+        <label for="name">First Name:</label>
+        <input type="text" name="name" id="name" value=""  />
+        <label for="name">Last Name:</label>
+        <input type="text" name="name" id="name" value=""  />
+        <label for="email">Email (optional):</label>
+        <input type="email" name="email" id="email" value=""  />
+        <label for="tel">Phone Number (optional):</label>
+        <input type="tel" name="tel" id="tel" value=""/>
+        <label for="tel">Driver's License Number (optional):</label>
+        <input type="tel" name="tel" id="tel" value=""  />
+        <label for="name">Preferred Shelter (optional):</label>
+        <input type="text" name="name" id="name" value=""  />
+
+      </div>  
       <!-- Textbox -->
-      <a class="ui-btn" href="">Verify!</a>
+      <a class="ui-btn" href="">Submit</a>
     </div><!-- /content -->
 
     <div data-role="footer">
         <h4>Bundle</a></h4>
     </div><!-- /footer -->
 </div><!-- /page -->
+
+<!-- VERIFIED PAGE -->
+<div data-role="page" id="verified">
+    <div data-role="header">
+        <h1>Menu</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back"></a></li>
+                <li><a href="#messages">Messages</a></li>
+            </ul>
+        </div>
+    </div><!-- /header -->
+
+    <div data-role="content">
+        Thank you! A volunteer will contact you shortly!
+        <a class="ui-btn" href="menu">Main Menu</a>
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>Bundle</a></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
 
 <div data-role="page" id="preferences">
     <div data-role="header">
@@ -262,6 +300,8 @@
     </div><!-- /footer -->
 </div><!-- /page -->
 
+
+<!-- PREVOUS MATCHES -->
 <div data-role="page" id="matches">
     <div data-role="header">
         <h1>Previous Matches</h1>
@@ -272,11 +312,10 @@
             </ul>
         </div>
     </div><!-- /header -->
-
     <div data-role="content">
-        <a class="ui-btn" href="#profile1">Profile 1</a>
-        <a class="ui-btn" href="#profile2">Profile 2</a>
-        <a class="ui-btn" href="#profile3">Profile 3</a>
+        <div id="allprevMatches"></div>
+    </div>
+    <div data-role="content">
         <a class="ui-btn" href="#search">Search</a>
     </div><!-- /content -->
 
@@ -317,8 +356,7 @@
     </div><!-- /footer -->
 </div><!-- /page -->
 
-<!-- Javascript for the messaging feature -->
-
+<!-- CHAT 1 -->
 <div data-role="page" id="chat1">
     <div data-role="header">
         <h1>Chat 1</h1>
@@ -329,24 +367,22 @@
             </ul>
         </div>
     </div><!-- /header -->
-
     <div data-role="content">
-
       <a href="#profile1" class="ui-btn-active ui-state-persist" data-inline="true">See Profile</a>
       <div data-inline="true">
       <!-- MESSAGES ARE HERE -->
       Person 1: Heya! I'm looking for a roomate to split a room for a night!
       </div>
-      <div id="allMsgs"></div>
-
+      <!-- allMsgs -->
+      <div id="allMsgs1"></div>
     </div><!-- /content -->
     <label for="name">Your Message:</label>
     <div class="ui-grid-a">
       <div class="ui-block-b" id="MessageArea">
-            <input type="text" id="msgarea" name="url" />
+            <input type="text" id="msgarea1" name="url" />
       </div>
       <div class="ui-block-d">
-            <button onclick="submitMessage()">Submit</button>
+            <button onclick="submitMessage(1)">Submit</button>
       </div>
 </div>
 
@@ -372,11 +408,17 @@
       <div>
       Person 2: Hey! I'm looking for a roomate to split a room for a night!
       </div>
+      <div id="allMsgs2"></div>
     </div><!-- /content -->
-    <div data-role="fieldcontain">
-            <label for="name">Your Message:</label>
-            <input type="text" name="name" id="name" value=""  />
-        </div>
+    <label for="name">Your Message:</label>
+    <div class="ui-grid-a">
+      <div class="ui-block-b" id="MessageArea">
+            <input type="text" id="msgarea2" name="url" />
+      </div>
+      <div class="ui-block-d">
+            <button onclick="submitMessage(2)">Submit</button>
+      </div>
+</div>
 
     <div data-role="footer">
         <h4>Bundle</a></h4>
@@ -400,40 +442,70 @@
       <div>
       Person 3: Hey! I'm looking for a roomate to split a room for a night!
       </div>
+      <div id="allMsgs3"></div>
     </div><!-- /content -->
-    <div data-role="fieldcontain">
-            <label for="name">Your Message:</label>
-            <input type="text" name="name" id="name" value=""  />
-        </div>
-
+   <label for="name">Your Message:</label>
+    <div class="ui-grid-a">
+      <div class="ui-block-b" id="MessageArea">
+            <input type="text" id="msgarea3" name="url" />
+      </div>
+      <div class="ui-block-d">
+            <button onclick="submitMessage(3)">Submit</button>
+      </div>
+</div>
     <div data-role="footer">
         <h4>Bundle</a></h4>
     </div><!-- /footer -->
 </div><!-- /page -->
 
+
+
+<!-- PROFILE 1 -->
 <div data-role="page" id="profile1">
     <div data-role="header">
         <h1>Profile1</h1>
+        <!-- /header -->
         <div data-role="navbar">
             <ul>
                 <li><a href="#menu" class="ui-btn-active ui-state-persist">Menu</a></li>
                 <li><a href="#messages">Messages</a></li>
             </ul>
         </div>
-    </div><!-- /header -->
+    </div>
 
     <div data-role="content">
-      <img src="pics/t1.jpg" alt="profile1" width="150px">
-      2 miles away
-      <a class="ui-btn" href="">Match</a>
-      <a class="ui-btn" href="#chat1">Message</a>
+      <div class="nameProfile"><h2>David</h2></div>
+      <div class="center">
+        <img src="pics/t1.jpg" alt="profile1" width="150px">
+        <div>
+          Gender Pronoun: He
+        </div>
+        <div>
+          Age: 21
+        </div>
+        <div class="nameLast">
+            <img src="pics/star.png" alt="profile1" width="30px">
+            <img src="pics/star.png" alt="profile1" width="30px">
+            <img src="pics/star.png" alt="profile1" width="30px">
+            <img src="pics/star.png" alt="profile1" width="30px" align="left">
+        </div>
+        2 miles away
+       </div>
+    </div>
+    <div data-role="content">
+      
     </div><!-- /content -->
+          <div data-role="content">
+      <a class="ui-btn" onclick="match(1)" onclick="change(1)" href="" id="buttonProfile1">Match</a>
+      <a class="ui-btn" href="#chat1">Message</a>
+      </div>
 
     <div data-role="footer">
         <h4>Bundle</a></h4>
     </div><!-- /footer -->
 </div><!-- /page -->
 
+<!-- PROFILE 2 -->
 <div data-role="page" id="profile2">
     <div data-role="header">
         <h1>Profile2</h1>
@@ -446,7 +518,24 @@
     </div><!-- /header -->
 
     <div data-role="content">
-      <img src="pics/t2.jpg" alt="profile2" width="150px">
+        <div data-role="content">
+      <div class="nameProfile"><h2>Christi</h2></div>
+      <div class="center">
+        <img src="pics/t2.jpg" alt="profile1" width="150px">
+        <div>
+          Gender Pronoun: She
+        </div>
+        <div>
+          Age: 21
+        </div>
+        <div class="nameLast">
+            <img src="pics/star.png" alt="profile2" width="30px">
+            <img src="pics/star.png" alt="profile2" width="30px">
+            <img src="pics/star.png" alt="profile2" width="30px" align="left">
+        </div>
+        13 miles away
+       </div>
+    </div>
       <a class="ui-btn" href="">Match</a>
       <a class="ui-btn" href="#chat2">Message</a>
     </div><!-- /content -->
@@ -456,6 +545,7 @@
     </div><!-- /footer -->
 </div><!-- /page -->
 
+<!-- PROFILE 3 -->
 <div data-role="page" id="profile3">
     <div data-role="header">
         <h1>Profile3</h1>
@@ -468,7 +558,26 @@
     </div><!-- /header -->
 
     <div data-role="content">
-      <img src="pics/t3.jpg" alt="profile3" width="150px">
+      <div data-role="content">
+      <div class="nameProfile"><h2>Tomo</h2></div>
+      <div class="center">
+        <img src="pics/t3.jpg" alt="profile1" width="150px">
+        <div>
+          Gender Pronoun: He
+        </div>
+        <div>
+          Age: 22
+        </div>
+        <div class="nameLast">
+            <img src="pics/star.png" alt="profile1" width="30px">
+            <img src="pics/star.png" alt="profile1" width="30px">
+            <img src="pics/star.png" alt="profile1" width="30px">
+            <img src="pics/star.png" alt="profile1" width="30px">
+            <img src="pics/star.png" alt="profile1" width="30px" align="left">
+        </div>
+        .5 miles away
+       </div>
+    </div>
       <a class="ui-btn" href="">Match</a>
       <a class="ui-btn" href="#chat3">Message</a>
     </div><!-- /content -->
