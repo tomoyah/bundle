@@ -45,8 +45,8 @@
                     <input type="range" name="range-1b" id="range-1b" min="0" max="100" value="80">
             </div>
         </form>
-        <label for="select-choice-8" class="select">Gender Pronouns:</label>
-            <select name="select-choice-8" id="select-choice-8" multiple="multiple" data-native-menu="false" data-icon="grid" data-iconpos="left">
+        <label for="select-choice-0" class="select">Gender Pronouns:</label>
+            <select name="select-choice-0" id="select-choice-0" multiple="multiple" data-native-menu="false" data-icon="grid" data-iconpos="left">
                 <option>Choose a few options:</option>
                 <optgroup label="Gender Pronouns">
                     <option value="male" selected="">he / his / him </option>
@@ -93,12 +93,12 @@
             </select>
         <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
             <legend>What activities you are interested in (select all that apply):</legend>
-            <input type="checkbox" name="checkbox-6" id="checkbox-6">
-            <label for="checkbox-6">Camping Out</label>
-            <input type="checkbox" name="checkbox-7" id="checkbox-7" checked="">
-            <label for="checkbox-7">Splitting a Room </label>
-            <input type="checkbox" name="checkbox-8" id="checkbox-8">
-            <label for="checkbox-8">Sharing a Meal </label>
+            <input type="checkbox" name="checkbox-0" id="checkbox-0">
+            <label for="checkbox-0">Camping Out</label>
+            <input type="checkbox" name="checkbox-1" id="checkbox-1" checked="">
+            <label for="checkbox-1">Splitting a Room </label>
+            <input type="checkbox" name="checkbox-2" id="checkbox-2">
+            <label for="checkbox-2">Sharing a Meal </label>
         </fieldset>
         <label for="basic">Additional Comments:</label>
                 <input type="text" name="name" id="basic" value="Anything else you would like us to know? If you chose 'other', explain further here so we can best match you!">
@@ -271,8 +271,8 @@
                     <input type="range" name="range-1b" id="range-1b" min="0" max="100" value="80">
             </div>
         </form>
-        <label for="select-choice-8" class="select">Preferred Gender Pronouns:</label>
-            <select name="select-choice-8" id="select-choice-8" multiple="multiple" data-native-menu="false" data-icon="grid" data-iconpos="left">
+        <label for="select-choice-1" class="select">Preferred Gender Pronouns:</label>
+            <select name="select-choice-1" id="select-choice-1" multiple="multiple" data-native-menu="false" data-icon="grid" data-iconpos="left">
                 <option></option>
                 <optgroup label="Gender Pronouns">
                     <option value="male" selected="">he / his / him </option>
@@ -496,9 +496,13 @@
       
     </div><!-- /content -->
           <div data-role="content">
-      <a class="ui-btn" onclick="match(1)" onclick="change(1)" href="" id="buttonProfile1">Match</a>
+      <a class="ui-btn" onclick="match(1)" onclick="change(1)" href="#popup1" id="buttonProfile1" data-rel="popup">Match</a>
       <a class="ui-btn" href="#chat1">Message</a>
       </div>
+    
+        <div data-role="popup" id="popup1">
+            <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a> You've been matched! Message now :) 
+        </div>
 
     <div data-role="footer">
         <h4>Bundle</a></h4>
