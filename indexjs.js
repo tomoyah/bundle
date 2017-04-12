@@ -4,10 +4,11 @@ var messageList = {
     ]
 }
 
+var profileList = ['David','Christi','Tomo'];
 
 function match(n) {
     var buttonHTML = "";
-    buttonHTML += '<a class="ui-btn" href="#profile' + n + '">Profile' + n + '</a>';
+    buttonHTML += '<a class="ui-btn" href="#profile' + n + '">' + profileList[n-1] + '</a>';
     $("#allprevMatches").html(buttonHTML);
    /* var content = document.createElement('div');
     content.innerHTML = 'class="ui-btn" href="#profile' + n + '">Profile ' + n;
