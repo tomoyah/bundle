@@ -477,7 +477,7 @@
 
     </div><!-- /content -->
           <div data-role="content">
-      <a class="ui-btn" onclick="match(1)" onclick="change(1)" href="" id="buttonProfile1">Match</a>
+      <a class="ui-btn" onclick="match(1); toggleUnmatch(1);" href="" id="buttonProfile1">Match</a>
       <a class="ui-btn" href="#chat1">Message</a>
       </div>
 
@@ -517,7 +517,7 @@
         13 miles away
        </div>
     </div>
-      <a class="ui-btn" href="">Match</a>
+      <a class="ui-btn" onclick="toggleUnmatch(2)" href="" id="buttonProfile2">Match</a>
       <a class="ui-btn" href="#chat2">Message</a>
     </div><!-- /content -->
 
@@ -559,7 +559,7 @@
         .5 miles away
        </div>
     </div>
-      <a class="ui-btn" href="">Match</a>
+      <a class="ui-btn" onclick="toggleUnmatch(3)" href="" id="buttonProfile3">Match</a>
       <a class="ui-btn" href="#chat3">Message</a>
     </div><!-- /content -->
 

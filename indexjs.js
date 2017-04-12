@@ -5,6 +5,7 @@ var messageList = {
 }
 
 var profileList = ['David','Christi','Tomo'];
+var matchedWith = [false,false,false];
 
 function match(n) {
     var buttonHTML = "";
@@ -15,6 +16,16 @@ function match(n) {
     //document.getElementById('allprevMatches').appendChild(content);
     content += '<a class="ui-btn" href="#profile' + n + '">Profile' + n + '</a>';
     $("#allprevMatches").appendChild(content);*/
+}
+
+function toggleUnmatch(profileIndex){
+  if(!matchedWith[profileIndex-1]){
+    $('#buttonProfile'+ profileIndex.toString()).html('Unmatch');
+    matchedWith[profileIndex-1] = true;
+  }else{
+    $("#buttonProfile"+ profileIndex.toString()).html('Match');
+    matchedWith[profileIndex-1] = false;
+  }
 }
 
 function submitMessage(n) {
