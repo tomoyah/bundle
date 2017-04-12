@@ -137,29 +137,10 @@
 
     <div data-role="content">
         <input type="text" name="search_query" value="Name, Location, Age">
-        <input type="submit" value="Search"><br>
-        <a class="ui-btn" href="#profile1">
-          <div class="profile_content">
-            <div class="name">David</div>
-            <img src="pics/t1.jpg" alt="profile1" width="80px">
-            <div class="distance">2 miles away</div>
-          </div>
-        </a>
-        <a class="ui-btn" href="#profile2">
-          <h1>Christi</h1>
-          <div class="profile_info">
-            <img src="pics/t2.jpg" alt="profile2" width="80px">
-            1 mile away
-          </div>
-        </a>
-        <a class="ui-btn" href="#profile3">
-          <div class="profile_content">
-            <h1>Tomo</h1>
-            <img src="pics/t3.jpg" alt="profile3" width="80px">
-            3 miles away
-          </div>
-        </a>
-
+        <input type="submit" value="Search" onclick="search()"><br>
+        <div class="search-results">
+          <!-- Populated by Search results with search() -->
+        </div>
     </div><!-- /content -->
 
     <div data-role="footer">
@@ -203,7 +184,7 @@
         </div>
     </div><!-- /header -->
     <div data-role="content">
-      To verify your identity, we ask that you either input your driver license number, or your basic information. After you complete this form, one of our volunteers will get in touch with you. 
+      To verify your identity, we ask that you either input your driver license number, or your basic information. After you complete this form, one of our volunteers will get in touch with you.
       <div data-role="fieldcontain">
         <label for="name">First Name:</label>
         <input type="text" name="name" id="name" value=""  />
@@ -218,7 +199,7 @@
         <label for="name">Preferred Shelter (optional):</label>
         <input type="text" name="name" id="name" value=""  />
 
-      </div>  
+      </div>
       <!-- Textbox -->
       <a class="ui-btn" href="">Submit</a>
     </div><!-- /content -->
@@ -493,7 +474,7 @@
        </div>
     </div>
     <div data-role="content">
-      
+
     </div><!-- /content -->
           <div data-role="content">
       <a class="ui-btn" onclick="match(1)" onclick="change(1)" href="" id="buttonProfile1">Match</a>
