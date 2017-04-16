@@ -13,43 +13,36 @@
     <script src="indexjs.js"></script>
 </head>
 <body>
-
-<div data-role="page" id="signup-signin">
-    <div data-role="content">
-        <h1>Bundle Signup Sign in</h1>
-        <a class="ui-btn" href="signin.html">Signin</a>
-        <a class="ui-btn" href="signup1.html">Signup</a>
-    </div><!-- /content -->
-
-    <div data-role="footer">
-        <h4>Bundle</a></h4>
-    </div><!-- /footer -->
-</div><!-- /page -->
-
-
-<div data-role="page" id="menu">
+<div data-role="page" id="chat3">
     <div data-role="header">
-        <h1>Menu</h1>
+        <h1>Tomo</h1>
         <div data-role="navbar">
             <ul>
-                <li><a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back"></a></li>
-                <li><a href="messages.html">Messages</a></li>
+                <li><a href="#menu" class="ui-btn-active ui-state-persist">Menu</a></li>
             </ul>
         </div>
     </div><!-- /header -->
 
     <div data-role="content">
-        <a class="ui-btn" href="search.html">Search</a>
-        <a class="ui-btn" href="matches.html">Previous Matches</a>
-        <a class="ui-btn" href="verification.html">Verification</a>
-        <a class="ui-btn" href="preferences.html">Buddy Preferences</a>
-        <a class="ui-btn" href="index.html">Log Out </a>
-    </div><!-- /content -->
 
+      <a href="profile3.html" class="ui-btn-active ui-state-persist">See Profile</a>
+      <div>
+      Person 3: Hey! I'm looking for a roomate to split a room for a night!
+      </div>
+      <div id="allMsgs3"></div>
+    </div><!-- /content -->
+   <label for="name">Your Message:</label>
+    <div class="ui-grid-a">
+      <div class="ui-block-b" id="MessageArea">
+            <input type="text" id="msgarea3" name="url" />
+      </div>
+      <div class="ui-block-d">
+            <button onclick="submitMessage(3)">Submit</button>
+      </div>
+</div>
     <div data-role="footer">
         <h4>Bundle</a></h4>
     </div><!-- /footer -->
 </div><!-- /page -->
-
 </body>
 </html>

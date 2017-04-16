@@ -13,43 +13,27 @@
     <script src="indexjs.js"></script>
 </head>
 <body>
-
-<div data-role="page" id="signup-signin">
-    <div data-role="content">
-        <h1>Bundle Signup Sign in</h1>
-        <a class="ui-btn" href="signin.html">Signin</a>
-        <a class="ui-btn" href="signup1.html">Signup</a>
-    </div><!-- /content -->
-
-    <div data-role="footer">
-        <h4>Bundle</a></h4>
-    </div><!-- /footer -->
-</div><!-- /page -->
-
-
-<div data-role="page" id="menu">
+<!-- PREVOUS MATCHES -->
+<div data-role="page" id="matches">
     <div data-role="header">
-        <h1>Menu</h1>
+        <h1>Previous Matches</h1>
         <div data-role="navbar">
             <ul>
-                <li><a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back"></a></li>
+                <li><a href="#menu" class="ui-btn-active ui-state-persist">Menu</a></li>
                 <li><a href="messages.html">Messages</a></li>
             </ul>
         </div>
     </div><!-- /header -->
-
+    <div data-role="content">
+        <div id="allprevMatches"></div>
+    </div>
     <div data-role="content">
         <a class="ui-btn" href="search.html">Search</a>
-        <a class="ui-btn" href="matches.html">Previous Matches</a>
-        <a class="ui-btn" href="verification.html">Verification</a>
-        <a class="ui-btn" href="preferences.html">Buddy Preferences</a>
-        <a class="ui-btn" href="index.html">Log Out </a>
     </div><!-- /content -->
 
     <div data-role="footer">
         <h4>Bundle</a></h4>
     </div><!-- /footer -->
 </div><!-- /page -->
-
 </body>
 </html>
