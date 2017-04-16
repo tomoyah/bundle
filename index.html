@@ -126,13 +126,11 @@
 
 <div data-role="page" id="search">
   <div data-role="header">
-      <h1>Search</h1>
-      <div data-role="navbar">
-          <ul>
-              <li><a href="#menu" class="ui-btn-active ui-state-persist">Menu</a></li>
-              <li><a href="#messages">Messages</a></li>
-          </ul>
-      </div>
+          
+              <a href="#menu" class="ui-btn-left"><img src="pics/menu.png" alt="profile1" width="20px"></a>
+              <h1><a href="">Bundle</a></h1>
+              <a href="#messages" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>
+          
   </div><!-- /header -->
 
     <div data-role="content">
@@ -478,9 +476,9 @@
     <div data-role="content">
 
     </div><!-- /content -->
-          <div data-role="content">
-      <a class="ui-btn" onclick="match(1); toggleUnmatch(1);" href="#popup1" id="buttonProfile1" data-rel="popup">Match</a>
-      <a class="ui-btn" onclick="message(1)" href="#chat1">Message</a>
+      <div data-role="content">
+          <a class="ui-btn" onclick="match(1); toggleUnmatch(1);" href="#popup1" id="buttonProfile1" data-rel="popup">Match</a>
+          <a class="ui-btn" onclick="message(1)" href="#chat1">Message</a>
       </div>
     
         <div data-role="popup" id="popup1">

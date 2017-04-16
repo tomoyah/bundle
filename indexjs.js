@@ -24,12 +24,16 @@ function toggleUnmatch(profileIndex){
   if(!matchedWith[profileIndex-1]){
     $('#buttonProfile'+ profileIndex.toString()).html('Unmatch');
     matchedWith[profileIndex-1] = true;
+        $('#popup1').show();
+
   }else{
     $("#buttonProfile"+ profileIndex.toString()).html('Match');
+    $('#popup1').hide();
     matchedWith[profileIndex-1] = false;
     var buttonHTML = "";
     buttonHTML += '';
     $("#allprevMatches").html(buttonHTML);
+
   }
 }
 
