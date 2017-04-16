@@ -57,7 +57,7 @@ function submitMessage(n) {
 }
 
 function search(){
-  var search_results_html = '<a class="ui-btn" href="#profile1"><div class="ui-grid-a"><div class="ui-block-a"><img src="pics/t1.jpg" alt="profile1" width="80px"></div><div class="ui-block-b"><h1>David</h1>2 miles away</div></div></a><a class="ui-btn" href="#profile2"><div class="ui-grid-a"><div class="ui-block-a"><img src="pics/t2.jpg" alt="profile2" width="80px"></div><div class="ui-block-b"><h1>Christi</h1>1 mile away</div></div></a><a class="ui-btn" href="#profile3"><div class="ui-grid-a"><div class="ui-block-a"><img src="pics/t3.jpg" alt="profile3" width="80px"></div><div class="ui-block-b"><h1>Tomo</h1>3 miles away</div></div></a></div>';
+  var search_results_html = '<a class="ui-btn" href="profile1.html"><div class="ui-grid-a"><div class="ui-block-a"><img src="pics/t1.jpg" alt="profile1" width="80px"></div><div class="ui-block-b"><h1>David</h1>2 miles away</div></div></a><a class="ui-btn" href="profile2.html"><div class="ui-grid-a"><div class="ui-block-a"><img src="pics/t2.jpg" alt="profile2" width="80px"></div><div class="ui-block-b"><h1>Christi</h1>1 mile away</div></div></a><a class="ui-btn" href="profile3.html"><div class="ui-grid-a"><div class="ui-block-a"><img src="pics/t3.jpg" alt="profile3" width="80px"></div><div class="ui-block-b"><h1>Tomo</h1>3 miles away</div></div></a></div>';
   $(".search-results").html(search_results_html);
 }
 
