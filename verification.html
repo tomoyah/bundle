@@ -16,15 +16,20 @@
 
 <!-- VERIFICATION -->
 <div data-role="page" id="verification">
+    <<div data-role="panel" id="mypanel">
+        <h2>Menu</h2>
+            <a class="ui-btn" href="search.html">Search for Matches</a>
+            <a class="ui-btn" href="messages.html">Messages</a>
+            <a class="ui-btn" href="matches.html">Previous Matches</a>
+            <a class="ui-btn" href="preferences.html">Preferences</a>
+            <a class="ui-btn" href="verification.html">Verification</a>
+    </div>
     <div data-role="header">
-        <h1>Verification</h1>
-        <div data-role="navbar">
-            <ul>
-                <li><a href="#menu" class="ui-btn-active ui-state-persist">Menu</a></li>
-                <li><a href="messages.html">Messages</a></li>
-            </ul>
-        </div>
-    </div><!-- /header -->
+        <!-- /header -->
+        <a href="#mypanel" class="ui-btn-left"><img src="pics/menu.png" alt="profile1" width="20px"></a>
+        <h1><a text-align="center" href="search.html">Bundle</a></h1>
+        <a href="messages.html" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>  
+    </div>
     <div data-role="content">
       To verify your identity, we ask that you either input your driver license number, or your basic information. After you complete this form, one of our volunteers will get in touch with you.
       <div data-role="fieldcontain">
@@ -54,24 +59,25 @@
 
 <!-- VERIFIED PAGE -->
 <div data-role="page" id="verified">
+    <div data-role="panel" id="mypanel">
+        <h2>Menu</h2>
+            <a class="ui-btn" href="search.html">Search for Matches</a>
+            <a class="ui-btn" href="messages.html">Messages</a>
+            <a class="ui-btn" href="matches.html">Previous Matches</a>
+            <a class="ui-btn" href="preferences.html">Preferences</a>
+            <a class="ui-btn" href="verification.html">Verification</a>
+    </div>
     <div data-role="header">
-        <h1>Menu</h1>
-        <div data-role="navbar">
-            <ul>
-                <li><a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back"></a></li>
-                <li><a href="messages.html">Messages</a></li>
-            </ul>
-        </div>
-    </div><!-- /header -->
+        <!-- /header -->
+        <a href="#mypanel" class="ui-btn-left"><img src="pics/menu.png" alt="profile1" width="20px"></a>
+        <h1><a text-align="center" href="">Bundle</a></h1>
+        <a href="messages.html" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>  
+    </div>
 
     <div data-role="content">
         Thank you! A volunteer will contact you shortly!
-        <a class="ui-btn" href="#menu">Main Menu</a>
     </div><!-- /content -->
 
-    <div data-role="footer">
-        <h4>Bundle</a></h4>
-    </div><!-- /footer -->
 </div><!-- /page -->
 
 </body>

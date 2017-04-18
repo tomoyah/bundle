@@ -10,14 +10,10 @@ var messaged = [false,false,false];
 
 
 function match(n) {
-    var buttonHTML = "";
-    buttonHTML += '<a class="ui-btn" href="#profile' + n + '">' + profileList[n-1] + '</a>';
-    $("#allprevMatches").html(buttonHTML);
-   /* var content = document.createElement('div');
-    content.innerHTML = 'class="ui-btn" href="#profile' + n + '">Profile ' + n;
-    //document.getElementById('allprevMatches').appendChild(content);
-    content += '<a class="ui-btn" href="#profile' + n + '">Profile' + n + '</a>';
-    $("#allprevMatches").appendChild(content);*/
+        var buttonHTML = "";
+        buttonHTML += '<a class="ui-btn" href="profile' + n + '.html">' + profileList[n-1] + '</a>';
+        //buttonHTML += '<div>WORK</div>'
+        $("#allprevMatches").html(buttonHTML);
 }
 
 function toggleUnmatch(profileIndex){
@@ -38,12 +34,6 @@ function toggleUnmatch(profileIndex){
 }
 
 function submitMessage(n) {
-    /*$("listName").html(messageList.listname);
-    var output = document.getElementById("msgarea").value;
-    messageList.newMessages.push(output)
-    var messageHtml = "";
-    messageHtml += '<div data-inline="true">' + messageList.newMessages + '</div>';
-    $("#allMsgs").html(messageHtml);*/
     var number = n;
     var stringnumber = number.toString();
     var string1 = "msgarea";
@@ -67,8 +57,10 @@ function message(messageIndex){
     for (i = 0; i < messaged.length; i++){
         if (messaged[i] == true){
             var num = i+1
-            msgHTML += '<div> <img src="pics/t' + num + '.jpg" alt="profile" width="50px"> <a href="#profile' + num + '">' + profileList[i] +'</a> <a data-inline="true" data-role="button" href="#chat' + num + '" >Chat</a> </div>'
+            //msgHTML += '<div>woof</div>'
+            msgHTML += '<div> <img src="pics/t' + num + '.jpg" alt="profile" width="50px"> <a href="profile' + num + '.html">' + profileList[i] +'</a> <a data-inline="true" data-role="button" href="chat' + num + '.html" >Chat</a> </div>'
         }
     }
     $("#previousMessages").html(msgHTML);
+
 }

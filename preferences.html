@@ -15,15 +15,20 @@
 <body>
 
 <div data-role="page" id="preferences">
+    <div data-role="panel" id="mypanel">
+        <h2>Menu</h2>
+            <a class="ui-btn" href="search.html">Search for Matches</a>
+            <a class="ui-btn" href="messages.html">Messages</a>
+            <a class="ui-btn" href="matches.html">Previous Matches</a>
+            <a class="ui-btn" href="preferences.html">Preferences</a>
+            <a class="ui-btn" href="verification.html">Verification</a>
+    </div>
     <div data-role="header">
-        <h1>Preferences</h1>
-        <div data-role="navbar">
-            <ul>
-                <li><a href="#menu" class="ui-btn-active ui-state-persist">Menu</a></li>
-                <li><a href="messages.html">Messages</a></li>
-            </ul>
-        </div>
-    </div><!-- /header -->
+        <!-- /header -->
+        <a href="#mypanel" class="ui-btn-left"><img src="pics/menu.png" alt="profile1" width="20px"></a>
+        <h1><a text-align="center" href="search.html">Bundle</a></h1>
+        <a href="messages.html" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>  
+    </div>
 
     <div data-role="content">
         <form>
@@ -55,7 +60,11 @@
         </fieldset>
         <label for="basic">Additional Comments:</label>
                 <input type="text" name="name" id="basic" value="Anything else you would like us to know? If you chose 'other', explain further here so we can best match you!"><!-- Textbox -->
-      <a class="ui-btn" href="">Update Preferences!</a>
+      <a href="#pps" data-rel="popup" class="ui-btn" data-transition="pop">Update Preferences</a>
+      <div data-role="popup" id="pps" class="ui-content">
+      <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+       <p>Preferences Updated!</p>
+      </div>
     </div><!-- /content -->
 
     <div data-role="footer">

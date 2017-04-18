@@ -15,15 +15,20 @@
 <body>
 <!-- CHAT 1 -->
 <div data-role="page" id="chat1">
+    <div data-role="panel" id="mypanel">
+        <h2>Menu</h2>
+            <a class="ui-btn" href="search.html">Search for Matches</a>
+            <a class="ui-btn" href="messages.html">Messages</a>
+            <a class="ui-btn" href="matches.html">Previous Matches</a>
+            <a class="ui-btn" href="preferences.html">Preferences</a>
+            <a class="ui-btn" href="verification.html">Verification</a>
+    </div>
     <div data-role="header">
-        <h1>David</h1>
-        <div data-role="navbar">
-            <ul>
-                <li><a href="#" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back"></a></li>
-                <li><a href="#menu" class="ui-btn-active ui-state-persist">Menu</a></li>
-            </ul>
-        </div>
-    </div><!-- /header -->
+        <!-- /header -->
+        <a href="#mypanel" class="ui-btn-left"><img src="pics/menu.png" alt="profile1" width="20px"></a>
+        <h1><a text-align="center" href="search.html">Bundle</a></h1>
+        <a href="messages.html" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>  
+    </div>
     <div data-role="content">
       <a href="profile1.html" class="ui-btn-active ui-state-persist" data-inline="true">See Profile</a>
       <div data-inline="true">
@@ -32,8 +37,7 @@
       </div>
       <!-- allMsgs -->
       <div id="allMsgs1"></div>
-    </div><!-- /content -->
-    <label for="name">Your Message:</label>
+    
     <div class="ui-grid-a">
       <div class="ui-block-b" id="MessageArea">
             <input type="text" id="msgarea1" name="url" />
@@ -41,6 +45,7 @@
       <div class="ui-block-d">
             <button onclick="submitMessage(1)">Submit</button>
       </div>
+      </div><!-- /content -->
 </div>
 
     <div data-role="footer">

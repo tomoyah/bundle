@@ -15,35 +15,25 @@
 <body>
 <!-- MESSAGES -->
 <div data-role="page" id="messages">
+   <div data-role="panel" id="mypanel">
+        <h2>Menu</h2>
+            <a class="ui-btn" href="search.html">Search for Matches</a>
+            <a class="ui-btn" href="messages.html">Messages</a>
+            <a class="ui-btn" href="matches.html">Previous Matches</a>
+            <a class="ui-btn" href="preferences.html">Preferences</a>
+            <a class="ui-btn" href="verification.html">Verification</a>
+    </div>
     <div data-role="header">
-        <h1>Messages</h1>
-        <div data-role="navbar">
-            <ul>
-                <li><a href="#menu" class="ui-btn-active ui-state-persist">Menu</a></li>
-            </ul>
+        <!-- /header -->
+        <a href="#mypanel" class="ui-btn-left"><img src="pics/menu.png" alt="profile1" width="20px"></a>
+        <h1><a text-align="center" href="search.html">Bundle</a></h1>
+        <a ref="messages.html" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>  
+    </div>
+        <div data-role="content">
+        <div id="previousMessages">
+            <h2>No current messages</h2>
         </div>
-    </div><!-- /header -->
-    <div id="previousMessages">
-    <!--
-    <div>
-        <img src="pics/t1.jpg" alt="profile1" width="50px">
-        <a href="#profile1">David</a>
-        <a data-inline="true" data-role="button" href="#chat1" >Chat</a>
     </div>
-    <div>
-        <img src="pics/t2.jpg" alt="profile1" width="50px">
-        <a href="#profile2">Christi</a>
-        <a data-inline="true" data-role="button" href="#chat2">Chat</a>
-    </div>
-    <div>
-        <img src="pics/t3.jpg" alt="profile1" width="50px">
-        <a href="#profile3">Tomo</a>
-        <a data-inline="true" data-role="button" href="#chat3">Chat</a>
-    </div> -->
-    </div>
-    <div data-role="footer">
-        <h4>Bundle</a></h4>
-    </div><!-- /footer -->
 </div><!-- /page -->
 </body>
 </html>

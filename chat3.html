@@ -13,24 +13,29 @@
     <script src="indexjs.js"></script>
 </head>
 <body>
+
 <div data-role="page" id="chat3">
+     <div data-role="panel" id="mypanel">
+        <h2>Menu</h2>
+            <a class="ui-btn" href="search.html">Search for Matches</a>
+            <a class="ui-btn" href="messages.html">Messages</a>
+            <a class="ui-btn" href="matches.html">Previous Matches</a>
+            <a class="ui-btn" href="preferences.html">Preferences</a>
+            <a class="ui-btn" href="verification.html">Verification</a>
+    </div>
     <div data-role="header">
-        <h1>Tomo</h1>
-        <div data-role="navbar">
-            <ul>
-                <li><a href="#menu" class="ui-btn-active ui-state-persist">Menu</a></li>
-            </ul>
-        </div>
-    </div><!-- /header -->
+        <!-- /header -->
+        <a href="#mypanel" class="ui-btn-left"><img src="pics/menu.png" alt="profile1" width="20px"></a>
+        <h1><a text-align="center" href="search.html">Bundle</a></h1>
+        <a href="messages.html" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>  
+    </div>
 
     <div data-role="content">
-
       <a href="profile3.html" class="ui-btn-active ui-state-persist">See Profile</a>
       <div>
       Person 3: Hey! I'm looking for a roomate to split a room for a night!
       </div>
       <div id="allMsgs3"></div>
-    </div><!-- /content -->
    <label for="name">Your Message:</label>
     <div class="ui-grid-a">
       <div class="ui-block-b" id="MessageArea">
@@ -39,6 +44,7 @@
       <div class="ui-block-d">
             <button onclick="submitMessage(3)">Submit</button>
       </div>
+      </div><!-- /content -->
 </div>
     <div data-role="footer">
         <h4>Bundle</a></h4>

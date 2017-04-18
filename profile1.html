@@ -15,15 +15,19 @@
 <body>
 <!-- PROFILE 1 -->
 <div data-role="page" id="profile1">
+    <div data-role="panel" id="mypanel">
+        <h2>Menu</h2>
+            <a class="ui-btn" href="search.html">Search for Matches</a>
+            <a class="ui-btn" href="messages.html">Messages</a>
+            <a class="ui-btn" href="matches.html">Previous Matches</a>
+            <a class="ui-btn" href="preferences.html">Preferences</a>
+            <a class="ui-btn" href="verification.html">Verification</a>
+    </div>
     <div data-role="header">
-        <h1>Profile1</h1>
         <!-- /header -->
-        <div data-role="navbar">
-            <ul>
-                <li><a href="#menu" class="ui-btn-active ui-state-persist">Menu</a></li>
-                <li><a href="messages.html">Messages</a></li>
-            </ul>
-        </div>
+        <a href="#mypanel" class="ui-btn-left"><img src="pics/menu.png" alt="profile1" width="20px"></a>
+        <h1><a text-align="center" href="search.html">Bundle</a></h1>
+        <a href="messages.html" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>  
     </div>
 
     <div data-role="content">
@@ -48,14 +52,13 @@
     <div data-role="content">
 
     </div><!-- /content -->
-          <div data-role="content">
+    <div data-role="content">
       <a class="ui-btn" onclick="match(1); toggleUnmatch(1);" href="#popup1" id="buttonProfile1" data-rel="popup">Match</a>
       <a class="ui-btn" onclick="message(1)" href="chat1.html">Message</a>
-      </div>
-
-        <div data-role="popup" id="popup1">
-            <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a> Matched! Message now :)
-        </div>
+    </div>
+    <div data-role="popup" id="popup1">
+        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a> Matched! Message now :)
+    </div>
 
     <div data-role="footer">
         <h4>Bundle</a></h4>
