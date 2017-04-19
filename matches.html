@@ -11,6 +11,15 @@
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="indexjs.js"></script>
+    <script>
+    $( document ).ready(function() {
+        if (matchedWith[1] == true){
+        var buttonHTML = "";
+        buttonHTML += '<a class="ui-btn" href="profile' + n + '.html">' + profileList[n-1] + '</a>';
+        $("#allprevMatches").html(buttonHTML);
+    }
+    });
+    </script>
 </head>
 <body>
 <!-- PREVOUS MATCHES -->

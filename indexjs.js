@@ -10,11 +10,13 @@ var messaged = [false,false,false];
 
 
 function match(n) {
+    if (matchedWith[1] == true){
         var buttonHTML = "";
         buttonHTML += '<a class="ui-btn" href="profile' + n + '.html">' + profileList[n-1] + '</a>';
-        //buttonHTML += '<div>WORK</div>'
         $("#allprevMatches").html(buttonHTML);
+    }
 }
+
 
 function toggleUnmatch(profileIndex){
   if(!matchedWith[profileIndex-1]){
@@ -54,6 +56,18 @@ function search(){
 function message(messageIndex){
     var msgHTML = "";
     messaged[messageIndex-1] = true;
+    for (i = 0; i < messaged.length; i++){
+        if (messaged[i] == true){
+            var num = i+1
+            //msgHTML += '<div>woof</div>'
+            msgHTML += '<div> <img src="pics/t' + num + '.jpg" alt="profile" width="50px"> <a href="profile' + num + '.html">' + profileList[i] +'</a> <a data-inline="true" data-role="button" href="chat' + num + '.html" >Chat</a> </div>'
+        }
+    }
+    $("#previousMessages").html(msgHTML);
+
+}
+
+function message1(){
     for (i = 0; i < messaged.length; i++){
         if (messaged[i] == true){
             var num = i+1
