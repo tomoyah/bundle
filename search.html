@@ -14,32 +14,44 @@
 </head>
 <body>
 <div data-role="page" id="search">
-<div data-role="panel" id="mypanel">
-        <h2>Menu</h2>
-            <a class="ui-btn" href="search.html">Search for Matches</a>
-            <a class="ui-btn" href="messages.html">Messages</a>
-            <a class="ui-btn" href="matches.html">Previous Matches</a>
-            <a class="ui-btn" href="preferences.html">Preferences</a>
-            <a class="ui-btn" href="verification.html">Verification</a>
-    </div>
+  <div data-role="panel" id="mypanel">
+    <h2>Menu</h2>
+      <a class="ui-btn" href="search.html">Search for Matches</a>
+      <a class="ui-btn" href="messages.html">Messages</a>
+      <a class="ui-btn" href="matches.html">Previous Matches</a>
+      <a class="ui-btn" href="preferences.html">Preferences</a>
+      <a class="ui-btn" href="verification.html">Verification</a>
+  </div>
   <div data-role="header">
         <!-- /header -->
         <a href="#mypanel" class="ui-btn-left"><img src="pics/menu.png" alt="profile1" width="20px"></a>
         <h1>Bundle</h1>
-        <a href="messages.html" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>  
-    </div>
+        <a href="messages.html" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>
+  </div>
 
-    <div data-role="content">
-        <input type="text" name="search_query" value="Name, Location, Age">
-        <input type="submit" value="Search" onclick="search()"><br>
-        <div class="search-results">
-          <!-- Populated by Search results with search() -->
-        </div>
-    </div><!-- /content -->
+  <div data-role="content">
+    <ul data-role="listview" data-inset="true">
+      <li><a href="profile1.html">
+          <img src="pics/t1.jpg">
+      <h2>David</h2>
+      <p>22, He/His/Him, Cambridge, 2 miles away</p></a>
+      </li>
+      <li><a href="profil2.html">
+          <img src="pics/t2.jpg">
+      <h2>Christi</h2>
+      <p>20, She/Hers/Her, Cambridge, 1 mile away</p></a>
+      </li>
+      <li><a href="profile3.html">
+          <img src="pics/t3.jpg">
+      <h2>Tomo</h2>
+      <p>21, He/His/Him, Cambridge, 3 miles away</p></a>
+      </li>
+    </ul>
+  </div>
 
-    <div data-role="footer">
-        <h4>Bundle</a></h4>
-    </div><!-- /footer -->
+  <div data-role="footer">
+      <h4>Bundle</a></h4>
+  </div><!-- /footer -->
 </div><!-- /page -->
 </body>
 </html>
