@@ -59,8 +59,8 @@ function message(messageIndex){
     for (i = 0; i < messaged.length; i++){
         if (messaged[i] == true){
             var num = i+1
-            //msgHTML += '<div>woof</div>'
-            msgHTML += '<div> <img src="pics/t' + num + '.jpg" alt="profile" width="50px"> <a href="profile' + num + '.html">' + profileList[i] +'</a> <a data-inline="true" data-role="button" href="chat' + num + '.html" >Chat</a> </div>'
+            msgHTML += '<div>woof</div>'
+            //msgHTML += '<div> <img src="pics/t' + num + '.jpg" alt="profile" width="50px"> <a href="profile' + num + '.html">' + profileList[i] +'</a> <a data-inline="true" data-role="button" href="chat' + num + '.html" >Chat</a> </div>'
         }
     }
     $("#previousMessages").html(msgHTML);
