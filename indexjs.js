@@ -12,6 +12,7 @@ var messaged = [false,false,false];
 function match(n) {
     if (matchedWith[n-1]){
         var buttonHTML = "";
+        $("#allprevMatches").html('');
         buttonHTML += '<a class="ui-btn" href="profile' + n + '.html">' + profileList[n-1] + '</a>';
         $("#allprevMatches").html(buttonHTML);
     }
