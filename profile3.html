@@ -42,11 +42,26 @@
           Age: 22
         </div>
         <div class="nameLast">
-            <img src="pics/star.png" alt="profile1" width="30px">
-            <img src="pics/star.png" alt="profile1" width="30px">
-            <img src="pics/star.png" alt="profile1" width="30px">
-            <img src="pics/star.png" alt="profile1" width="30px">
-            <img src="pics/star.png" alt="profile1" width="30px" align="left">
+            Rate? <!--Plugin-->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="jquery.barrating.js"></script>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.2/themes/fontawesome-stars.css" rel="stylesheet"/>
+            <script>
+                $(function() {
+                  $('#rating').barrating({
+                    theme: 'fontawesome-stars'
+                  });
+               });
+            </script>
+            <select id="rating" data-role="none">
+            <option value=""></option>
+            <option value="1" selected="selected">1</option>
+              <option value="2" selected="selected">2</option>
+              <option value="3" selected="selected">3</option>
+              <option value="4" selected="selected">4</option>
+              <option value="5" selected="selected">5</option>
+            </select>
         </div>
         .5 miles away
        </div>
