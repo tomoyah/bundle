@@ -13,12 +13,7 @@ function match(n) {
     if (matchedWith[n-1]){
         var buttonHTML = "";
         $("#allprevMatches").html('');
-        // buttonHTML += '<a class="ui-btn" href="profile' + n + '.html">' + profileList[n-1] + '</a>';
-
         buttonHTML += '<ul data-role="listview" data-inset="true"><li><a href="#profile1"><img src="pics/t1.jpg"><h2>David</h2><p>22, He/His/Him, Cambridge, 2 miles away</p></a></li></ul>'
-
-
-
         $("#allprevMatches").html(buttonHTML);
     }
 }
