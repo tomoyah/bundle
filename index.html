@@ -511,9 +511,16 @@
         <a href="#messages" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>
     </div>
     <div data-role="content">
-        <div id="allprevMatches">
-          You don't have any matches yet! Start matching with people, and they'll show up here.
-        </div>
+      <div id="no-matches">
+        You don't have any matches yet! Start matching with people, and they'll show up here.
+      </div>
+      <ul data-role="listview" data-inset="true" id="match-list" style="display: none">
+        <li><a href="#profile1">
+            <img src="pics/t1.jpg">
+        <h2>David</h2>
+        <p>22, He/His/Him, Cambridge, 2 miles away</p></a>
+        </li>
+      </ul>
     </div><!-- /content -->
 </div><!-- /page -->
 <div data-role="page" id="preferences">

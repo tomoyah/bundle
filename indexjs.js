@@ -12,9 +12,11 @@ var messaged = [false,false,false];
 function match(n) {
     if (matchedWith[n-1]){
         var buttonHTML = "";
-        $("#allprevMatches").html('');
-        buttonHTML += '<ul data-role="listview" data-inset="true"><li><a href="#profile1"><img src="pics/t1.jpg"><h2>David</h2><p>22, He/His/Him, Cambridge, 2 miles away</p></a></li></ul>'
-        $("#allprevMatches").html(buttonHTML);
+        $("#no-matches").hide();
+        $("#match-list").show();
+        // $("#allprevMatches").html('');
+        // buttonHTML += '<a href="#profile1"><img src="pics/t1.jpg" width="100px"><h2>David</h2><p>22, He/His/Him, Cambridge, 2 miles away</p></a>'
+        // $("#allprevMatches").html(buttonHTML);
     }
 }
 
@@ -32,6 +34,8 @@ function toggleUnmatch(profileIndex){
     var buttonHTML = "";
     buttonHTML += '';
     $("#allprevMatches").html(buttonHTML);
+    $("#no-matches").show();
+    $("#match-list").hide();
 
   }
 }
