@@ -10,7 +10,7 @@ var messaged = [false,false,false];
 
 
 function match(n) {
-    if (matchedWith[1] == true){
+    if (matchedWith[n-1]){
         var buttonHTML = "";
         buttonHTML += '<a class="ui-btn" href="profile' + n + '.html">' + profileList[n-1] + '</a>';
         $("#allprevMatches").html(buttonHTML);
@@ -55,13 +55,17 @@ function search(){
 
 function message(messageIndex){
     var msgHTML = "";
+    var noMessages = true;
     messaged[messageIndex-1] = true;
     for (i = 0; i < messaged.length; i++){
-        if (messaged[i] == true){
+        if (messaged[i]){
+            noMessages = false;
             var num = i+1
-            msgHTML += '<div>woof</div>'
-            //msgHTML += '<div> <img src="pics/t' + num + '.jpg" alt="profile" width="50px"> <a href="profile' + num + '.html">' + profileList[i] +'</a> <a data-inline="true" data-role="button" href="chat' + num + '.html" >Chat</a> </div>'
+            msgHTML += '<div> <img src="pics/t' + num + '.jpg" alt="profile" width="50px"> <a href="#profile' + num + '">' + profileList[i] +'</a> <a data-inline="true" data-role="button" href="#chat' + num + '">Chat</a> </div>'
         }
+    }
+    if(!noMessages){
+      $("#previousMessages").html('');
     }
     $("#previousMessages").html(msgHTML);
 

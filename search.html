@@ -15,34 +15,34 @@
 </head>
 <body>
 <div data-role="page" id="search">
-  <div data-role="panel" id="mypanel">
+  <div data-role="panel" id="mypanel-search">
     <h2>Menu</h2>
-      <a class="ui-btn" href="search.html">Search for Matches</a>
-      <a class="ui-btn" href="messages.html">Messages</a>
-      <a class="ui-btn" href="matches.html">Previous Matches</a>
-      <a class="ui-btn" href="preferences.html">Preferences</a>
-      <a class="ui-btn" href="verification.html">Verification</a>
+      <a class="ui-btn" href="#search">Search for Matches</a>
+      <a class="ui-btn" href="#messages">Messages</a>
+      <a class="ui-btn" href="#matches">Previous Matches</a>
+      <a class="ui-btn" href="#preferences">Preferences</a>
+      <a class="ui-btn" href="#verification">Verification</a>
   </div>
   <div data-role="header">
         <!-- /header -->
-        <a href="#mypanel" class="ui-btn-left"><img src="pics/menu.png" alt="profile1" width="20px"></a>
+        <a href="#mypanel-search" class="ui-btn-left"><img src="pics/menu.png" alt="profile1" width="20px"></a>
         <h1>Bundle</h1>
-        <a href="messages.html" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>
+        <a href="#messages" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>
   </div>
 
   <div data-role="content">
     <ul data-role="listview" data-inset="true">
-      <li><a href="profile1.html">
+      <li><a href="#profile1">
           <img src="pics/t1.jpg">
       <h2>David</h2>
       <p>22, He/His/Him, Cambridge, 2 miles away</p></a>
       </li>
-      <li><a href="profile2.html">
+      <li><a href="#profile2">
           <img src="pics/t2.jpg">
       <h2>Christi</h2>
       <p>20, She/Hers/Her, Cambridge, 1 mile away</p></a>
       </li>
-      <li><a href="profile3.html">
+      <li><a href="#profile3">
           <img src="pics/t3.jpg">
       <h2>Tomo</h2>
       <p>21, He/His/Him, Cambridge, 3 miles away</p></a>
@@ -54,5 +54,432 @@
       <h4>Bundle</a></h4>
   </div><!-- /footer -->
 </div><!-- /page -->
+<div data-role="page" id="profile1">
+    <div data-role="panel" id="mypanel-profile1">
+        <h2>Menu</h2>
+            <a class="ui-btn" href="#search">Search for Matches</a>
+            <a class="ui-btn" href="#messages">Messages</a>
+            <a class="ui-btn" href="#matches">Previous Matches</a>
+            <a class="ui-btn" href="#preferences">Preferences</a>
+            <a class="ui-btn" href="#verification">Verification</a>
+    </div>
+    <div data-role="header">
+        <!-- /header -->
+        <a href="#mypanel-profile1" class="ui-btn-left"><img src="pics/menu.png" alt="profile1" width="20px"></a>
+        <h1><a text-align="center" href="#search">Bundle</a></h1>
+        <a href="#messages" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>
+    </div>
+
+    <div data-role="content">
+      <div class="nameProfile"><h2>David</h2></div>
+      <div class="center">
+        <img src="pics/t1.jpg" alt="profile1" width="150px">
+        <div>
+          Gender Pronoun: He
+        </div>
+        <div>
+          Age: 21
+        </div>
+        <div class="nameLast">
+            Rate? <!--Plugin-->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="jquery.barrating.js"></script>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.2/themes/fontawesome-stars.css" rel="stylesheet"/>
+            <script>
+                $(function() {
+                  $('#rating').barrating({
+                    theme: 'fontawesome-stars'
+                  });
+               });
+            </script>
+            <select id="rating" data-role="none">
+            <option value=""></option>
+            <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+        </div>
+        2 miles away
+       </div>
+    </div>
+    <div data-role="content">
+
+    </div><!-- /content -->
+    <div data-role="content">
+      <a class="ui-btn" onclick="toggleUnmatch(1); match(1)" href="#popup1" id="buttonProfile1" data-rel="popup">Match</a>
+      <a class="ui-btn" onclick="message(1)" href="#chat1">Message</a>
+    </div>
+    <div data-role="popup" id="popup1">
+        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a> Matched! Message now :)
+    </div>
+
+    <div data-role="footer">
+        <h4>Bundle</a></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+<div data-role="page" id="profile2">
+    <div data-role="panel" id="mypanel-profile2">
+      <h2>Menu</h2>
+            <a class="ui-btn" href="#search">Search for Matches</a>
+            <a class="ui-btn" href="#messages">Messages</a>
+            <a class="ui-btn" href="#matches">Previous Matches</a>
+            <a class="ui-btn" href="#preferences">Preferences</a>
+            <a class="ui-btn" href="#verification">Verification</a>
+    </div>
+    <div data-role="header">
+        <!-- /header -->
+        <a href="#mypanel-profile2" class="ui-btn-left"><img src="pics/menu.png" alt="profile1" width="20px"></a>
+        <h1><a text-align="center" href="#search">Bundle</a></h1>
+        <a href="#messages" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>
+    </div>
+
+    <div data-role="content">
+        <div data-role="content">
+      <div class="nameProfile"><h2>Christi</h2></div>
+      <div class="center">
+        <img src="pics/t2.jpg" alt="profile1" width="150px">
+        <div>
+          Gender Pronoun: She
+        </div>
+        <div>
+          Age: 21
+        </div>
+        <div class="nameLast">
+            <img src="pics/star.png" alt="profile2" width="30px">
+            <img src="pics/star.png" alt="profile2" width="30px">
+            <img src="pics/star.png" alt="profile2" width="30px" align="left">
+        </div>
+        13 miles away
+       </div>
+    </div>
+      <a class="ui-btn" onclick="toggleUnmatch(2)" href="" id="buttonProfile2">Match</a>
+      <a class="ui-btn" onclick="message(2)" href="#chat2">Message</a>
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>Bundle</a></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+<div data-role="page" id="profile3">
+    <div data-role="panel" id="mypanel-profile3">
+        <h2>Menu</h2>
+            <a class="ui-btn" href="#search">Search for Matches</a>
+            <a class="ui-btn" href="#messages">Messages</a>
+            <a class="ui-btn" href="#matches">Previous Matches</a>
+            <a class="ui-btn" href="#preferences">Preferences</a>
+            <a class="ui-btn" href="#verification">Verification</a>
+    </div>
+    <div data-role="header">
+        <!-- /header -->
+        <a href="#mypanel-profile3" class="ui-btn-left"><img src="pics/menu.png" alt="profile1" width="20px"></a>
+        <h1><a text-align="center" href="#search">Bundle</a></h1>
+        <a href="#messages" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>
+    </div>
+
+    <div data-role="content">
+      <div data-role="content">
+      <div class="nameProfile"><h2>Tomo</h2></div>
+      <div class="center">
+        <img src="pics/t3.jpg" alt="profile1" width="150px">
+        <div>
+          Gender Pronoun: He
+        </div>
+        <div>
+          Age: 22
+        </div>
+        <div class="nameLast">
+            <img src="pics/star.png" alt="profile1" width="30px">
+            <img src="pics/star.png" alt="profile1" width="30px">
+            <img src="pics/star.png" alt="profile1" width="30px">
+            <img src="pics/star.png" alt="profile1" width="30px">
+            <img src="pics/star.png" alt="profile1" width="30px" align="left">
+        </div>
+        .5 miles away
+       </div>
+    </div>
+      <a class="ui-btn" onclick="toggleUnmatch(3)" href="" id="buttonProfile3">Match</a>
+      <a class="ui-btn" onclick="message(3)" href="#chat3">Message</a>
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>Bundle</a></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+<div data-role="page" id="chat1">
+    <div data-role="panel" id="mypanel-chat1">
+        <h2>Menu</h2>
+            <a class="ui-btn" href="#search">Search for Matches</a>
+            <a class="ui-btn" href="#messages">Messages</a>
+            <a class="ui-btn" href="#matches">Previous Matches</a>
+            <a class="ui-btn" href="#preferences">Preferences</a>
+            <a class="ui-btn" href="#verification">Verification</a>
+    </div>
+    <div data-role="header">
+        <!-- /header -->
+        <a href="#mypanel-chat1" class="ui-btn-left"><img src="pics/menu.png" alt="profile1" width="20px"></a>
+        <h1><a text-align="center" href="#search">Bundle</a></h1>
+        <a href="#messages" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>
+    </div>
+    <div data-role="content">
+      <a href="#profile1" class="ui-btn-active ui-state-persist" data-inline="true">See Profile</a>
+      <div data-inline="true">
+      <!-- MESSAGES ARE HERE -->
+      Person 1: Heya! I'm looking for a roomate to split a room for a night!
+      </div>
+      <!-- allMsgs -->
+      <div id="allMsgs1"></div>
+
+    <div class="ui-grid-a">
+      <div class="ui-block-b" id="MessageArea">
+            <input type="text" id="msgarea1" name="url" />
+      </div>
+      <div class="ui-block-d">
+            <button onclick="submitMessage(1)">Submit</button>
+      </div>
+      </div><!-- /content -->
+    </div>
+
+    <div data-role="footer">
+        <h4>Bundle</a></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+<div data-role="page" id="chat2">
+    <div data-role="panel" id="mypanel-chat2">
+        <h2>Menu</h2>
+            <a class="ui-btn" href="#search">Search for Matches</a>
+            <a class="ui-btn" href="#messages">Messages</a>
+            <a class="ui-btn" href="#matches">Previous Matches</a>
+            <a class="ui-btn" href="#preferences">Preferences</a>
+            <a class="ui-btn" href="#verification">Verification</a>
+    </div>
+    <div data-role="header">
+        <!-- /header -->
+        <a href="#mypanel-chat2" class="ui-btn-left"><img src="pics/menu.png" alt="profile1" width="20px"></a>
+        <h1><a text-align="center" href="#search">Bundle</a></h1>
+        <a href="#messages" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>
+    </div>
+
+    <div data-role="content">
+
+      <a href="#profile2" class="ui-btn-active ui-state-persist">See Profile</a>
+      <div>
+      Person 2: Hey! I'm looking for a roomate to split a room for a night!
+      </div>
+      <div id="allMsgs2"></div>
+    <div class="ui-grid-a">
+      <div class="ui-block-b" id="MessageArea">
+            <input type="text" id="msgarea2" name="url" />
+      </div>
+      <div class="ui-block-d">
+            <button onclick="submitMessage(2)">Submit</button>
+      </div>
+          </div><!-- /content -->
+    </div>
+
+    <div data-role="footer">
+        <h4>Bundle</a></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+<div data-role="page" id="chat3">
+     <div data-role="panel" id="mypanel-chat3">
+        <h2>Menu</h2>
+            <a class="ui-btn" href="#search">Search for Matches</a>
+            <a class="ui-btn" href="#messages">Messages</a>
+            <a class="ui-btn" href="#matches">Previous Matches</a>
+            <a class="ui-btn" href="#preferences">Preferences</a>
+            <a class="ui-btn" href="#verification">Verification</a>
+    </div>
+    <div data-role="header">
+        <!-- /header -->
+        <a href="#mypanel-chat3" class="ui-btn-left"><img src="pics/menu.png" alt="profile1" width="20px"></a>
+        <h1><a text-align="center" href="#search">Bundle</a></h1>
+        <a href="#messages" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>
+    </div>
+
+    <div data-role="content">
+      <a href="#profile3" class="ui-btn-active ui-state-persist">See Profile</a>
+      <div>
+        Person 3: Hey! I'm looking for a roomate to split a room for a night!
+      </div>
+      <div id="allMsgs3"></div>
+        <label for="name">Your Message:</label>
+        <div class="ui-grid-a">
+          <div class="ui-block-b" id="MessageArea">
+            <input type="text" id="msgarea3" name="url" />
+          </div>
+          <div class="ui-block-d">
+            <button onclick="submitMessage(3)">Submit</button>
+          </div>
+        </div><!-- /content -->
+      </div>
+    <div data-role="footer">
+        <h4>Bundle</a></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+<div data-role="page" id="messages">
+   <div data-role="panel" id="mypanel-messages">
+        <h2>Menu</h2>
+            <a class="ui-btn" href="#search">Search for Matches</a>
+            <a class="ui-btn" href="#messages">Messages</a>
+            <a class="ui-btn" href="#matches">Previous Matches</a>
+            <a class="ui-btn" href="#preferences">Preferences</a>
+            <a class="ui-btn" href="#verification">Verification</a>
+    </div>
+    <div data-role="header">
+        <!-- /header -->
+        <a href="#mypanel-messages" class="ui-btn-left"><img src="pics/menu.png" alt="profile1" width="20px"></a>
+        <h1><a text-align="center" href="#search">Bundle</a></h1>
+        <a ref="#messages" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>
+    </div>
+        <div data-role="content">
+        <div id="previousMessages">
+          You haven't messaged anybody yet! Once you message somebody, your conversations will appear here.
+        </div>
+    </div>
+</div><!-- /page -->
+<div data-role="page" id="matches">
+    <div data-role="panel" id="mypanel-matches">
+        <h2>Menu</h2>
+            <a class="ui-btn" href="#search">Search for Matches</a>
+            <a class="ui-btn" href="#messages">Messages</a>
+            <a class="ui-btn" href="#matches">Previous Matches</a>
+            <a class="ui-btn" href="#preferences">Preferences</a>
+            <a class="ui-btn" href="#verification">Verification</a>
+    </div>
+    <!-- /header -->
+    <div data-role="header">
+        <a href="#mypanel-matches" class="ui-btn-left"><img src="pics/menu.png" alt="profile1" width="20px"></a>
+        <h1><a text-align="center" href="#search">Bundle</a></h1>
+        <a href="#messages" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>
+    </div>
+    <div data-role="content">
+        <div id="allprevMatches"></div>
+        <a class="ui-btn" href="#search">Search</a>
+    </div><!-- /content -->
+</div><!-- /page -->
+<div data-role="page" id="preferences">
+    <div data-role="panel" id="mypanel-preferences">
+        <h2>Menu</h2>
+            <a class="ui-btn" href="#search">Search for Matches</a>
+            <a class="ui-btn" href="#messages">Messages</a>
+            <a class="ui-btn" href="#matches">Previous Matches</a>
+            <a class="ui-btn" href="#preferences">Preferences</a>
+            <a class="ui-btn" href="#verification">Verification</a>
+    </div>
+    <div data-role="header">
+        <!-- /header -->
+        <a href="#mypanel-preferences" class="ui-btn-left"><img src="pics/menu.png" alt="profile1" width="20px"></a>
+        <h1><a text-align="center" href="#search">Bundle</a></h1>
+        <a href="#messages" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>
+    </div>
+
+    <div data-role="content">
+        <form>
+        <div data-role="rangeslider">
+                <label for="range-1a"> Age Range </label>
+                    <input type="range" name="range-1a" id="range-1a" min="0" max="100" value="40">
+                    <label for="range-1b">Rangeslider:</label>
+                    <input type="range" name="range-1b" id="range-1b" min="0" max="100" value="80">
+            </div>
+        </form>
+        <label for="select-choice-1" class="select">Preferred Gender Pronouns:</label>
+            <select name="select-choice-1" id="select-choice-1" multiple="multiple" data-native-menu="false" data-icon="grid" data-iconpos="left">
+                <option></option>
+                <optgroup label="Gender Pronouns">
+                    <option value="male" selected="">he / his / him </option>
+                    <option value="female">she / hers / her </option>
+                    <option value="nonconforming">they / theirs / them </option>
+                     <option value="Other"> other </option>
+                </optgroup>
+            </select>
+        <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+            <legend>What activities you are interested in (select all that apply):</legend>
+            <input type="checkbox" name="checkbox-6" id="checkbox-6">
+            <label for="checkbox-6">Camping Out</label>
+            <input type="checkbox" name="checkbox-7" id="checkbox-7" checked="">
+            <label for="checkbox-7">Splitting a Room </label>
+            <input type="checkbox" name="checkbox-8" id="checkbox-8">
+            <label for="checkbox-8">Sharing a Meal </label>
+        </fieldset>
+        <label for="basic">Additional Comments:</label>
+                <input type="text" name="name" id="basic" value="Anything else you would like us to know? If you chose 'other', explain further here so we can best match you!"><!-- Textbox -->
+      <a href="#pps" data-rel="popup" class="ui-btn" data-transition="pop">Update Preferences</a>
+      <div data-role="popup" id="pps" class="ui-content">
+      <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+       <p>Preferences Updated!</p>
+      </div>
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>Bundle</a></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+<div data-role="page" id="verification">
+    <<div data-role="panel" id="mypanel-verification">
+        <h2>Menu</h2>
+            <a class="ui-btn" href="#search">Search for Matches</a>
+            <a class="ui-btn" href="#messages">Messages</a>
+            <a class="ui-btn" href="#matches">Previous Matches</a>
+            <a class="ui-btn" href="#preferences">Preferences</a>
+            <a class="ui-btn" href="#verification">Verification</a>
+    </div>
+    <div data-role="header">
+        <!-- /header -->
+        <a href="#mypanel-verification" class="ui-btn-left"><img src="pics/menu.png" alt="profile1" width="20px"></a>
+        <h1><a text-align="center" href="#search">Bundle</a></h1>
+        <a href="#messages" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>
+    </div>
+    <div data-role="content">
+      <h2>Verifying your identity helps you find matches, and it's an easy process! <h2>
+      <h5>To verify your identity, we ask that you either input your driver license number, or your basic information. After you complete this form, one of our volunteers will get in touch with you.</h5>
+      <div data-role="fieldcontain">
+        <label for="name">First Name:</label>
+        <input type="text" name="name" id="name" value=""  />
+        <label for="name">Last Name:</label>
+        <input type="text" name="name" id="name" value=""  />
+        <label for="email">Email (optional):</label>
+        <input type="email" name="email" id="email" value=""  />
+        <label for="tel">Phone Number (optional):</label>
+        <input type="tel" name="tel" id="tel" value=""/>
+        <label for="tel">Driver's License Number (optional):</label>
+        <input type="tel" name="tel" id="tel" value=""  />
+        <label for="name">Preferred Shelter (optional):</label>
+        <input type="text" name="name" id="name" value=""  />
+
+      </div>
+      <!-- Textbox -->
+      <a class="ui-btn" href="#verified">Submit</a>
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>Bundle</a></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+<!-- VERIFIED PAGE -->
+<div data-role="page" id="verified">
+    <div data-role="panel" id="mypanel-verified">
+        <h2>Menu</h2>
+            <a class="ui-btn" href="#search">Search for Matches</a>
+            <a class="ui-btn" href="#messages">Messages</a>
+            <a class="ui-btn" href="#matches">Previous Matches</a>
+            <a class="ui-btn" href="#preferences">Preferences</a>
+            <a class="ui-btn" href="#verification">Verification</a>
+    </div>
+    <div data-role="header">
+        <!-- /header -->
+        <a href="#mypanel-verified" class="ui-btn-left"><img src="pics/menu.png" alt="profile1" width="20px"></a>
+        <h1><a text-align="center" href="">Bundle</a></h1>
+        <a href="#messages" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>
+    </div>
+
+    <div data-role="content">
+        Thank you! A volunteer will contact you shortly!
+    </div><!-- /content -->
+
+</div><!-- /page -->
+
 </body>
 </html>
