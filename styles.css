@@ -26,3 +26,9 @@
     font-family: "Lato", sans-serif;
     padding:10px 20px;
 }
+
+.userpref{
+    border-radius: 25px; 
+    background: aliceblue; 
+    padding: 10px; 
+}
