@@ -202,9 +202,8 @@
                });
             </script>
             <select id="rating" data-role="none">
-            <option value=""></option>
-            <option value="1">1</option>
-              <option value="2">2</option>
+            <option value="1" selected="selected">1</option>
+              <option value="2" selected="selected">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
               <option value="5">5</option>
@@ -217,11 +216,14 @@
 
     </div><!-- /content -->
     <div data-role="content">
-      <a class="ui-btn" onclick="toggleUnmatch(1); match(1)" href="#popup1" id="buttonProfile1" data-rel="popup">Match</a>
-      <a class="ui-btn" onclick="message(1)" href="#chat1">Message</a>
+      <a class="ui-btn" onclick="toggleUnmatch(1); match(1)" href="#popup1" id="buttonProfile1" data-rel="popup" data-transition="slideup">Match</a>
+      <a class="ui-btn" onclick="message(1)" href="chat1.html">Message</a>
     </div>
     <div data-role="popup" id="popup1">
-        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a> Matched! Message now :)
+            <h3>Matched! Message now? </h3>
+            <a href="chat1.html" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-arrow-r">Go to Messages</a>
+            <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a> 
+        </div>
     </div>
 
     <div data-role="footer">
@@ -256,9 +258,25 @@
           Age: 21
         </div>
         <div class="nameLast">
-            <img src="pics/star.png" alt="profile2" width="30px">
-            <img src="pics/star.png" alt="profile2" width="30px">
-            <img src="pics/star.png" alt="profile2" width="30px" align="left">
+            Rate? <!--Plugin-->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="jquery.barrating.js"></script>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.2/themes/fontawesome-stars.css" rel="stylesheet"/>
+            <script>
+                $(function() {
+                  $('#rating2').barrating({
+                    theme: 'fontawesome-stars'
+                  });
+               });
+            </script>
+            <select id="rating2" data-role="none">
+            <option value="1" selected="selected">1</option>
+              <option value="2" selected="selected">2</option>
+              <option value="3" selected="selected">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
         </div>
         13 miles away
        </div>
@@ -299,11 +317,25 @@
           Age: 22
         </div>
         <div class="nameLast">
-            <img src="pics/star.png" alt="profile1" width="30px">
-            <img src="pics/star.png" alt="profile1" width="30px">
-            <img src="pics/star.png" alt="profile1" width="30px">
-            <img src="pics/star.png" alt="profile1" width="30px">
-            <img src="pics/star.png" alt="profile1" width="30px" align="left">
+            Rate? <!--Plugin-->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="jquery.barrating.js"></script>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.2/themes/fontawesome-stars.css" rel="stylesheet"/>
+            <script>
+                $(function() {
+                  $('#rating3').barrating({
+                    theme: 'fontawesome-stars'
+                  });
+               });
+            </script>
+            <select id="rating3" data-role="none">
+            <option value="1" selected="selected">1</option>
+              <option value="2" selected="selected">2</option>
+              <option value="3" selected="selected">3</option>
+              <option value="4" selected="selected">4</option>
+              <option value="5" selected="selected">5</option>
+            </select>
         </div>
         .5 miles away
        </div>
