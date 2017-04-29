@@ -18,9 +18,12 @@
 <div data-role="page" id="matches">
     <script>
         $( document ).ready(function() {
-            if (matchedWith[0]){
-                $("#no-matches").show();
-                $("#match-list").hide();
+            for(i = 0; i < 3; i++){
+              if(matchedWith[i]){
+                console.log("working");
+                $("#no-matches").hide();
+                $("#match-" + i).show();
+              }
             }
         });
     </script>
@@ -43,10 +46,15 @@
       <div id="no-matches">
         You don't have any matches yet! Start matching with people, and they'll show up here.
       </div>
-      <ul data-role="listview" data-inset="true" id="match-list" style="display: none">
-        <li><a href="profile1.html">
+      <ul data-role="listview" data-inset="true" id="match-list">
+        <li id="match-0" style="display: none"><a href="profile1.html">
             <img src="pics/t1.jpg">
         <h2>David</h2>
+        <p>22, He/His/Him, Cambridge, 2 miles away</p></a>
+        </li>
+        <li id="match-1" style="display: none"><a href="profile2.html">
+            <img src="pics/t2.jpg">
+        <h2>Christi</h2>
         <p>22, He/His/Him, Cambridge, 2 miles away</p></a>
         </li>
       </ul>

@@ -8,10 +8,6 @@ var profileList = ['David','Christi','Tomo'];
 var matchedWith = [false,false,false];
 var messaged = [false,false,false];
 
-$(document).on("pageshow","#search",function(){ // When entering pagetwo
-  alert("pagetwo is now shown");
-});
-
 function match(n) {
     if (matchedWith[n-1]){
         var buttonHTML = "";
