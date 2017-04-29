@@ -31,8 +31,8 @@
         <a href="messages.html" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>
     </div>
     <div data-role="content">
-        <h2>Verifying your identity helps you find matches, and it's an easy process! <h2>
-        <h5>To verify your identity, we ask that you either input your driver license number, or your basic information. After you complete this form, one of our volunteers will get in touch with you.</h5>
+        <h2>Verfication<h2>
+        <h5>By chosing to verify your information (your age, gender, and phone number) with one of our volunteers, you ensure that other users in the community know that your credentials are valid, which helps to build a safe network of users for everyone</h5>
         <div data-role="fieldcontain">
             <label for="name">First Name:</label>
             <input type="text" name="name" id="name" value=""  />
@@ -46,7 +46,15 @@
             <input type="tel" name="tel" id="name" value=""  />
         </div>
         <!-- Textbox -->
-        <a class="ui-btn" href="#verified">Submit</a>
+        <a class="ui-btn" data-rel="popup" href="#popupDialog"  data-position-to="window">Submit</a>
+
+        <div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+        <div data-role="header" data-theme="a">
+            <h1>Thank You!</h1>
+        </div>
+            <p >A volunteer will be contactng you (via your chat feature) shortly!</p>
+            <a href="search.html" class="ui-btn">Return to Search</a>
+        </div>
     </div><!-- /content -->
 
     <div data-role="footer">
@@ -70,9 +78,6 @@
         <a href="messages.html" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>
     </div>
 
-    <div data-role="content">
-        Thank you! A volunteer will contact you shortly!
-    </div><!-- /content -->
 
 </div><!-- /page -->
 </body>
