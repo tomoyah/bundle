@@ -45,10 +45,12 @@ function submitMessage(n) {
     var res1 = string1.concat(stringnumber);
     var output = document.getElementById(res1).value;
     var content = document.createElement('div');
-    content.innerHTML = 'You:' + output;
+    content.innerHTML = 'You: ' + output;
     var string2 = "allMsgs";
     var res2 = string2.concat(stringnumber);
     document.getElementById(res2).appendChild(content);
+    document.getElementById(res1).value = "";
+    document.getElementById(res1).setAttribute('style','');
 }
 
 function search(){

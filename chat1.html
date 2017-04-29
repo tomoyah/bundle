@@ -32,19 +32,21 @@
     <div data-role="content">
       <a href="profile1.html" class="ui-btn-active ui-state-persist" data-inline="true">See Profile</a>
       <div data-inline="true">
-      <!-- MESSAGES ARE HERE -->
-      David: Heya! I'm looking for a roomate to split a room for a night!
+        <div>
+          <!-- MESSAGES ARE HERE -->
+          David: Hey! I'm looking for a roomate to split a room for a night!
+          </div>
+        <!-- allMsgs -->
+        <div id="allMsgs1"></div>
       </div>
-      <!-- allMsgs -->
-      <div id="allMsgs1"></div>
-
     <div class="ui-grid-a">
-      <div class="ui-block-b" id="MessageArea">
-            <input type="text" id="msgarea1" name="url" />
+      <div id="MessageArea">
+            <!-- <input type="text" id="msgarea1" class="msgTextBox" name="url" /> -->
+            <div class="msgarea">
+              <textarea id="msgarea1"></textarea>
+            </div>
       </div>
-      <div class="ui-block-d">
-            <button onclick="submitMessage(1)">Submit</button>
-      </div>
+            <button onclick="submitMessage(1)" onclick="eraseText(1)">Send</button>
       </div><!-- /content -->
     </div>
 
