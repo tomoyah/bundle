@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Page Title</title>
+    <title>Bundle</title>
     <!--update view based on the device-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--get jquery mobile libraries and css-->
@@ -73,10 +73,10 @@
         </div>
     </div>
     <div data-role="content">
-        <a class="ui-btn" onclick="toggleUnmatch(1); match(1)" href="#popup1" id="buttonProfile1" data-rel="popup" data-transition="slideup">Match</a>
+        <a class="ui-btn" onclick="toggleUnmatch(1); match(1)" href="#popup" id="buttonProfile1" data-rel="popup" data-transition="slideup">Match</a>
         <a class="ui-btn" onclick="message(1)" href="chat1.html">Message</a>
     </div>
-    <div data-role="popup" id="popup1">
+    <div data-role="popup" id="popup">
         <h3>Matched! Message now? </h3>
         <a href="chat1.html" onclick="message(1)" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-arrow-r">Go to Messages</a>
         <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>

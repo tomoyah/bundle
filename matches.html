@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Page Title</title>
+    <title>Bundle</title>
     <!--update view based on the device-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--get jquery mobile libraries and css-->
@@ -18,12 +18,13 @@
 <div data-role="page" id="matches">
     <script>
         $( document ).ready(function() {
-            for(i = 0; i < 3; i++){
-              if(matchedWith[i]){
-                console.log("working");
-                $("#no-matches").hide();
-                $("#match-" + i).show();
-              }
+            console.log("Document ready");
+            for(i = 0; i < 6; i++){
+                if(matchedWith[i]){
+                    console.log("matched");
+                    $("#no-matches").hide();
+                    $("#match-" + i).show();
+                }
             }
         });
     </script>
@@ -55,6 +56,26 @@
         <li id="match-1" style="display: none"><a href="profile2.html">
             <img src="pics/t2.jpg">
         <h2>Christi</h2>
+        <p>22, He/His/Him, Cambridge, 2 miles away</p></a>
+        </li>
+        <li id="match-2" style="display: none"><a href="profile1.html">
+            <img src="pics/t3.jpg">
+        <h2>David</h2>
+        <p>22, He/His/Him, Cambridge, 2 miles away</p></a>
+        </li>
+        <li id="match-3" style="display: none"><a href="profile2.html">
+            <img src="pics/t4.jpg">
+        <h2>Profile 4</h2>
+        <p>22, He/His/Him, Cambridge, 2 miles away</p></a>
+        </li>
+        <li id="match-4" style="display: none"><a href="profile1.html">
+            <img src="pics/t5.jpg">
+        <h2>Profile 5</h2>
+        <p>22, He/His/Him, Cambridge, 2 miles away</p></a>
+        </li>
+        <li id="match-5" style="display: none"><a href="profile2.html">
+            <img src="pics/t6.jpg">
+        <h2>Profile 6</h2>
         <p>22, He/His/Him, Cambridge, 2 miles away</p></a>
         </li>
       </ul>

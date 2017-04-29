@@ -5,14 +5,14 @@ var messageList = {
 }
 
 var profileList = ['David','Christi','Tomo'];
-var matchedWith = [false,false,false];
-var messaged = [false,false,false];
+var matchedWith = [false,false,false,false,false,false];
+var messaged = [false,false,false,false,false,false];
 
 function match(n) {
     if (matchedWith[n-1]){
         var buttonHTML = "";
-        $("#no-matches").hide();
-        $("#match-list").show();
+        // $("#no-matches").hide();
+        // $("#match-list").show();
         // $("#allprevMatches").html('');
         // buttonHTML += '<a href="profile1.html"><img src="pics/t1.jpg" width="100px"><h2>David</h2><p>22, He/His/Him, Cambridge, 2 miles away</p></a>'
         // $("#allprevMatches").html(buttonHTML);
@@ -23,11 +23,11 @@ function toggleUnmatch(profileIndex){
   if(!matchedWith[profileIndex-1]){
     $('#buttonProfile'+ profileIndex.toString()).html('Unmatch');
     matchedWith[profileIndex-1] = true;
-        $('#popup1').show();
+    $('#popup').show();
 
   }else{
     $("#buttonProfile"+ profileIndex.toString()).html('Match');
-    $('#popup1').hide();
+    $('#popup').hide();
     matchedWith[profileIndex-1] = false;
     var buttonHTML = "";
     buttonHTML += '';

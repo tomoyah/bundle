@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Page Title</title>
+    <title>Bundle</title>
     <!--update view based on the device-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--get jquery mobile libraries and css-->
@@ -20,14 +20,17 @@
     <script>
         $( document ).ready(function() {
             msgHTML = "";
+            noMessages = true;
             for (i = 0; i < messaged.length; i++){
-                if (messaged[i] == true){
+                if (messaged[i]){
+                    noMessages = false;
                     var num = i+1
-                    //msgHTML += '<div>woof</div>'
                     msgHTML += '<div> <img src="pics/t' + num + '.jpg" alt="profile" width="50px"> <a href="profile' + num + '.html">' + profileList[i] +'</a> <a data-inline="true" data-role="button" href="chat' + num + '.html" >Chat</a> </div>'
                 }
             }
-            $("#previousMessages").html(msgHTML);
+            if(!noMessages){
+                $("#previousMessages").html(msgHTML);
+            }
         });
     </script>
 
