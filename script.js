@@ -43,6 +43,11 @@ function filter(n){
             break;
 
     }
+    for(i = 0; i < 6; i++){
+        if(matchedWith[i] || i in dismissed){
+            $("#search-profile" + i + 1).hide();
+        }
+    }
 }
 
 function toggleUnmatch(profileIndex){
