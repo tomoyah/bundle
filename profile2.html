@@ -10,63 +10,66 @@
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="indexjs.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
 
-<!-- PROFILE 2 -->
 <div data-role="page" id="profile2">
-    <div data-role="panel" id="mypanel">
+    <div data-role="panel" id="mypanel-profile2">
         <h2>Menu</h2>
-            <a class="ui-btn" href="search.html">Search for Matches</a>
-            <a class="ui-btn" href="messages.html">Messages</a>
-            <a class="ui-btn" href="matches.html">Previous Matches</a>
-            <a class="ui-btn" href="preferences.html">Preferences</a>
-            <a class="ui-btn" href="verification.html">Verification</a>
+        <a class="ui-btn" href="search.html">Search for Matches</a>
+        <a class="ui-btn" href="messages.html">Messages</a>
+        <a class="ui-btn" href="matches.html">Previous Matches</a>
+        <a class="ui-btn" href="preferences.html">Preferences</a>
+        <a class="ui-btn" href="verification.html">Verification</a>
     </div>
     <div data-role="header">
-        <!-- /header -->
-        <a href="#mypanel" class="ui-btn-left"><img src="pics/menu.png" alt="profile1" width="20px"></a>
+        <a href="#mypanel-profile2" class="ui-btn-left"><img src="pics/menu.png" alt="profile1" width="20px"></a>
         <h1><a text-align="center" href="search.html">Bundle</a></h1>
-        <a href="messages.html" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>  
+        <a href="messages.html" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>
     </div>
 
     <div data-role="content">
-        <div data-role="content">
-      <div class="nameProfile"><h2>Christi</h2></div>
-      <div class="center">
-        <img src="pics/t2.jpg" alt="profile1" width="150px">
-        <div>
-          Gender Pronoun: She
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <img src="pics/t2.jpg" alt="profile2" width="200px">
+            </div>
+            <div class="ui-block-b">
+                <h2>Christi</h2><br>
+                <div>
+                    Gender Pronoun: She
+                </div>
+                <div>
+                    Age: 20
+                </div>
+                <div class="nameLast">
+                    Rate? <!--Plugin-->
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <script src="jquery.barrating.js"></script>
+                    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.2/themes/fontawesome-stars.css" rel="stylesheet"/>
+                    <script>
+                        $(function() {
+                          $('#rating').barrating({
+                            theme: 'fontawesome-stars'
+                          });
+                       });
+                    </script>
+                    <select id="rating" data-role="none">
+                    <option value="1" selected="selected">1</option>
+                      <option value="2" selected="selected">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                </div>
+                13 miles away
+                <p class ="userpref"> Camping out </p>
+            </div>
         </div>
-        <div>
-          Age: 21
-        </div>
-        <div class="nameLast">
-           Rate? <!--Plugin-->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-            <script src="jquery.barrating.js"></script>
-            <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.2/themes/fontawesome-stars.css" rel="stylesheet"/>
-            <script>
-                $(function() {
-                  $('#rating').barrating({
-                    theme: 'fontawesome-stars'
-                  });
-               });
-            </script>
-            <select id="rating" data-role="none">
-            <option value=""></option>
-            <option value="1" selected="selected">1</option>
-              <option value="2" selected="selected">2</option>
-              <option value="3" selected="selected">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
-        </div>
-        13 miles away
-       </div>
     </div>
+
+    <div data-role="content">
       <a class="ui-btn" onclick="toggleUnmatch(2)" href="" id="buttonProfile2">Match</a>
       <a class="ui-btn" onclick="message(2)" href="chat2.html">Message</a>
     </div><!-- /content -->
@@ -75,5 +78,6 @@
         <h4>Bundle</a></h4>
     </div><!-- /footer -->
 </div><!-- /page -->
+
 </body>
 </html>
