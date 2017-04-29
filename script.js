@@ -7,6 +7,7 @@ var messageList = {
 var profileList = ['David','Christi','Tomo'];
 var matchedWith = [false,false,false,false,false,false];
 var messaged = [false,false,false,false,false,false];
+var dismissed = [];
 
 function match(n) {
     if (matchedWith[n-1]){
@@ -16,6 +17,31 @@ function match(n) {
         // $("#allprevMatches").html('');
         // buttonHTML += '<a href="profile1.html"><img src="pics/t1.jpg" width="100px"><h2>David</h2><p>22, He/His/Him, Cambridge, 2 miles away</p></a>'
         // $("#allprevMatches").html(buttonHTML);
+    }
+}
+
+function dismiss(n){
+    dismissed.push(n-1);
+    $('#search-profile'+n.toString()).hide();
+}
+
+// input = int representing [0:camping out; 1:splitting a room; 2:sharing a meal]
+// Would define user classes but this is a prototype
+// User1: 1,1,0; User2: 1,0,1; User3: 1,1,1; User4: 0,1,1; User5-6:1,1,0
+function filter(n){
+    switch(n){
+        case 0:
+            $('#search-profile4').toggle($('search-checkbox-camping').checked);
+            break;
+        case 1:
+            $('#search-profile2').toggle($('search-checkbox-rooming').checked);
+            break;
+        case 2:
+            $('#search-profile1').toggle($('search-checkbox-meal').checked);
+            $('#search-profile5').toggle($('search-checkbox-meal').checked);
+            $('#search-profile6').toggle($('search-checkbox-meal').checked);
+            break;
+
     }
 }
 
