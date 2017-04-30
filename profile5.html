@@ -72,13 +72,12 @@
             </div>
         </div>
     </div>
-    <div data-role="content">
-        <a class="ui-btn" onclick="toggleUnmatch(5); match(5)" href="#popup" id="buttonProfile5" data-rel="popup" data-transition="slideup">Match</a>
-        <a class="ui-btn" onclick="message(5)" href="chat5.html">Message</a>
-    </div>
-    <div data-role="popup" id="popup">
-        <h3>Matched! Message now? </h3>
-        <a href="chat5.html" onclick="message(5)" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-arrow-r">Go to Messages</a>
+     <div data-role="content">
+      <a class="ui-btn" onclick="toggleUnmatch(5)" href="#popup" id="buttonProfile5" data-rel="popup" data-transition="slideup">Match</a>
+      <a class="ui-btn" onclick="message(5)" href="chat5.html">Message</a>
+    </div><!-- /content -->
+    <div data-role="popup" id="popup" style="max-width:400px; font-size:15px">
+        <h3>They haven't expressed mutual interest yet, but if they do, they will appear in "Previous Matches"</h3>
         <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
     </div>
     <div data-role="footer">

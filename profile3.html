@@ -73,9 +73,13 @@
       </div>
     </div>
     <div data-role="content">
-      <a class="ui-btn" onclick="toggleUnmatch(3)" href="" id="buttonProfile3">Match</a>
+      <a class="ui-btn" onclick="toggleUnmatch(3)" href="#popup" id="buttonProfile3" data-rel="popup" data-transition="slideup">Match</a>
       <a class="ui-btn" onclick="message(3)" href="chat3.html">Message</a>
     </div><!-- /content -->
+    <div data-role="popup" id="popup" style="max-width:400px; font-size:15px">
+        <h3>Tomo hasn't expressed mutual interest yet, but if he does, he will appear in "Previous Matches"</h3>
+        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+    </div>
 
     <div data-role="footer">
         <h4>Bundle</a></h4>

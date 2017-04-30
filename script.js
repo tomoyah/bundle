@@ -53,7 +53,9 @@ function filter(n){
 function toggleUnmatch(profileIndex){
   if(!matchedWith[profileIndex-1]){
     $('#buttonProfile'+ profileIndex.toString()).html('Unmatch');
-    matchedWith[profileIndex-1] = true;
+    if (profileIndex != 2 && profileIndex != 3 && profileIndex != 5){
+        matchedWith[profileIndex-1] = true;
+    }
     $('#popup').show();
 
   }else{

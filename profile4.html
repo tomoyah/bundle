@@ -76,10 +76,12 @@
         <a class="ui-btn" onclick="toggleUnmatch(4); match(4)" href="#popup" id="buttonProfile4" data-rel="popup" data-transition="slideup">Match</a>
         <a class="ui-btn" onclick="message(4)" href="chat4.html">Message</a>
     </div>
-    <div data-role="popup" id="popup">
-        <h3>Matched! Message now? </h3>
-        <a href="chat4.html" onclick="message(4)" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-arrow-r">Go to Messages</a>
+    <div data-role="popup" id="popup" style="max-width:400px; font-size:15px">
+        <h2>You have been Matched!</h2>
+        <h4>They have expressed mutual interest in you</h4>
+        <a href="chat4.html" onclick="message(4)" class="ui-btn" style="font-size:15px">Message Them Now!</a>
         <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+    </div>
     </div>
     <div data-role="footer">
         <h4>Bundle</a></h4>

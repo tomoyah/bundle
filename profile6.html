@@ -74,11 +74,12 @@
     </div>
     <div data-role="content">
         <a class="ui-btn" onclick="toggleUnmatch(6); match(6)" href="#popup" id="buttonProfile6" data-rel="popup" data-transition="slideup">Match</a>
-        <a class="ui-btn" onclick="message(6)" href="chat1.html">Message</a>
+        <a class="ui-btn" onclick="message(6)" href="chat6.html">Message</a>
     </div>
-    <div data-role="popup" id="popup">
-        <h3>Matched! Message now? </h3>
-        <a href="chat6.html" onclick="message(6)" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-arrow-r">Go to Messages</a>
+    <div data-role="popup" id="popup" style="max-width:400px; font-size:15px">
+        <h2>You have been Matched!</h2>
+        <h4>Ofra has expressed mutual interest in you</h4>
+        <a href="chat1.html" onclick="message(6)" class="ui-btn" style="font-size:15px">Message Ofra Now!</a>
         <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
     </div>
     <div data-role="footer">
