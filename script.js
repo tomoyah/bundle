@@ -78,7 +78,7 @@ function submitMessage(n) {
     var res1 = string1.concat(stringnumber);
     var output = document.getElementById(res1).value;
     var content = document.createElement('div');
-    content.innerHTML = '<div align="right">You:</div> <div style="background-color: #f2f2f2; padding: 9px; border: white;border-width: thick; margin-bottom:5px; border-radius:15px" align="right">' + output + '</div>';
+    content.innerHTML = '<div align="right">You:</div> <div style="background-color: #ffeb99; padding: 9px; border: white;border-width: thick; margin-bottom:5px; border-radius:15px" align="right">' + output + '</div>';
     var string2 = "allMsgs";
     var res2 = string2.concat(stringnumber);
     document.getElementById(res2).appendChild(content);

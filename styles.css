@@ -33,10 +33,42 @@
 
 .userpref{
     border-radius: 25px;
-    background: aliceblue;
+    background: #ffeb99;
     padding: 10px;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    height: auto;
+    width: auto;
+    max-height: 80%;
+    max-width: 80%;
+    text-align: center;
 }
 
 #msgarea{
   display:inline-block;
+}
+
+#search-select{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+h2.pn{
+    margin-bottom: -5px;
+}
+
+.userbio{
+    max-height: 80%;
+    max-width: 80%;
+    border-radius: 25px;
+    background: #dfbe9f;
+    padding: 10px;
+    font-family: "Lato", sans-serif;
+    font-weight: bolder;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
 }
