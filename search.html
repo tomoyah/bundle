@@ -20,8 +20,9 @@
         $( document ).ready(function() {
             console.log("Document ready");
             for(i = 0; i < 6; i++){
-                if(matchedWith[i] || i in dismissed){
+                if(matchedWith[i] || dismissed.indexOf(i) >= 0){
                     console.log("matched");
+                    console.log(i);
                     $("#search-profile" + i + 1).hide();
                 }
             }
