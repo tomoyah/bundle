@@ -19,17 +19,17 @@
 <div data-role="page" id="messages">
     <script>
         $( document ).ready(function() {
-            msgHTML = "";
             noMessages = true;
             for (i = 0; i < messaged.length; i++){
+                $('#message-profile'+i+1).show();
                 if (messaged[i]){
                     noMessages = false;
-                    var num = i+1
-                    msgHTML += '<div> <img src="pics/t' + num + '.jpg" alt="profile" width="50px"> <a href="profile' + num + '.html">' + profileList[i] +'</a> <a data-inline="true" data-role="button" href="chat' + num + '.html" >Chat</a> </div>'
+                    id = i+1
+                    $('#message-profile'+id).show();
                 }
             }
             if(!noMessages){
-                $("#previousMessages").html(msgHTML);
+                $("#noMessages").html("");
             }
         });
     </script>
@@ -48,13 +48,44 @@
          <h1><a href="search.html"><img text-align="center" src="pics/bundlepic.png" width="40px"><img text-align="center" src="pics/bundle2.png" width="80px"></a></h1>
         <a ref="messages.html" class="ui-btn-right"><img src="pics/mess.png" width="20px"></a>
     </div>
-        <div data-role="content">
-        <div id="previousMessages">
-          You haven't messaged anybody yet! Once you message somebody, your conversations will appear here.
+    <div data-role="content">
+        <div id="noMessages">
+            You haven't messaged anybody yet! Once you message somebody, your conversations will appear here.
         </div>
+        <ul data-role="listview" data-inset="true" >
+            <li id="message-profile1" style="display: none"><a href="chat1.html">
+                <img src="pics/t1.jpg">
+            <h2>David</h2>
+            <p>22, He/His/Him, Cambridge, 2 miles away</p></a>
+            </li>
+            <li id="message-profile2" style="display: none"><a href="chat2.html">
+                <img src="pics/t2.jpg">
+            <h2>Christi</h2>
+            <p>20, She/Hers/Her, Cambridge, 1 mile away</p></a>
+            </li>
+            <li id="message-profile3" style="display: none"><a href="chat3.html">
+                <img src="pics/t3.jpg">
+            <h2>Tomo</h2>
+            <p>21, He/His/Him, Cambridge, 3 miles away</p></a>
+            </li>
+            <li id="message-profile4" style="display: none"><a href="chat4.html">
+                <img src="pics/t4.jpg">
+            <h2>Profile 4</h2>
+            <p>22, He/His/Him, Cambridge, 2 miles away</p></a>
+            </li>
+            <li id="message-profile5" style="display: none"><a href="chat5.html">
+                <img src="pics/t5.jpg">
+            <h2>Profile 5</h2>
+            <p>20, She/Hers/Her, Cambridge, 1 mile away</p></a>
+            </li>
+            <li id="message-profile6" style="display: none"><a href="chat6.html">
+                <img src="pics/t6.jpg">
+            <h2>Profile 6</h2>
+            <p>21, He/His/Him, Cambridge, 3 miles away</p></a>
+            </li>
+        </ul>
     </div>
-</div><!-- /page -->
-
+</div>
 
 </body>
 </html>
