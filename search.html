@@ -23,7 +23,8 @@
                 if(matchedWith[i] || dismissed.indexOf(i) >= 0){
                     console.log("matched");
                     console.log(i);
-                    $("#search-profile" + i + 1).hide();
+                    index = i+1
+                    $("#search-profile" + index).hide();
                 }
             }
         });
