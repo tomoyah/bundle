@@ -8,6 +8,7 @@ var profileList = ['David','Christi','Tomo','Avery','Constantine','Jhaelle'];
 var matchedWith = [false,false,false,false,false,false];
 var messaged = [false,false,false,false,false,false];
 var dismissed = [];
+var rated = [false,false,false,false,false,false];
 
 function match(n) {
     if (matchedWith[n-1]){
@@ -25,6 +26,11 @@ function dismiss(n){
     $('#search-profile'+n.toString()).hide();
 }
 
+function rate(n){
+    rated[n-1] = true;
+    $("#ratebutton"+n.toString()).hide();
+    console.log("rated");
+}
 // input = int representing [0:camping out; 1:splitting a room; 2:sharing a meal]
 // Would define user classes but this is a prototype
 // User1: 1,1,0; User2: 1,0,1; User3: 1,1,1; User4: 0,1,1; User5-6:1,1,0
