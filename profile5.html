@@ -39,6 +39,13 @@
         <div class="ui-grid-a">
             <div class="ui-block-a">
                 <img class="profilepic" src="pics/t5.jpg" alt="profile5">
+                <div class = "userbio">
+                    <div style="text-align: center; font-weight: bolder"> BIO </div>
+                    David is originally from Irvine, California. In five years, he sees himself with a full time job and hopefully living in Salem, which is not too far from where his coworkers live. When David is not writing or working his day job, she enjoys running, singing, and playing the piano.
+                    <div>
+                        <a class="ui-btn" href="#biopopup1" id="buttonProfilex" data-rel="popup" data-transition="slideup" style="    background-color: #A75B51; padding: 0px; color: white;">More Info</a>
+                    </div>
+                </div>
             </div>
             <div class="ui-block-b">
                 <h2 class="pn">Constantine</h2><br>
@@ -76,7 +83,22 @@
             </div>
         </div>
     </div>
-     <div data-role="content">
+    
+     <div data-role="popup" id="biopopup1" style="max-width:400px; font-size:15px" data-overlay-theme="b" data-theme="b">
+        <div data-role="header" data-theme="a">
+        <h1>Bio</h1>
+        </div>
+        <div role="main" class="ui-content" style="overflow: scroll;">
+            <h3 class="ui-title" style="text">Goals, Dreams, and Interests</h3>
+        <p>
+
+                                  David is originally from Irvine, California. In five years, he sees himself with a full time job and hopefully living in Salem, which is not too far from where his coworkers live. When David is not writing or working his day job, he enjoys running, singing, and playing the piano.
+        </p>
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back"> Go Back </a>
+        </div>
+    </div>
+    
+    <div data-role="content">
       <a class="ui-btn" onclick="toggleUnmatch(5)" href="#popup" id="buttonProfile5" data-rel="popup" data-transition="slideup">Match</a>
       <a class="ui-btn" onclick="message(5)" href="chat5.html">Message</a>
     </div><!-- /content -->
