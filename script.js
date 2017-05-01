@@ -10,17 +10,6 @@ var messaged = [false,false,false,false,false,false];
 var dismissed = [];
 var rated = [false,false,false,false,false,false];
 
-function match(n) {
-    if (matchedWith[n-1]){
-        var buttonHTML = "";
-        // $("#no-matches").hide();
-        // $("#match-list").show();
-        // $("#allprevMatches").html('');
-        // buttonHTML += '<a href="profile1.html"><img src="pics/t1.jpg" width="100px"><h2>David</h2><p>22, He/His/Him, Cambridge, 2 miles away</p></a>'
-        // $("#allprevMatches").html(buttonHTML);
-    }
-}
-
 function dismiss(n){
     dismissed.push(n-1);
     $('#search-profile'+n.toString()).hide();
@@ -29,7 +18,6 @@ function dismiss(n){
 function rate(n){
     rated[n-1] = true;
     $("#ratebutton"+n.toString()).hide();
-    console.log("rated");
 }
 // input = int representing [0:camping out; 1:splitting a room; 2:sharing a meal]
 // Would define user classes but this is a prototype
@@ -90,11 +78,6 @@ function submitMessage(n) {
     document.getElementById(res2).appendChild(content);
     document.getElementById(res1).value = "";
     document.getElementById(res1).setAttribute('style','');
-}
-
-function search(){
-  var search_results_html = '<a class="ui-btn" href="profile1.html"><div class="ui-grid-a"><div class="ui-block-a"><img src="pics/t1.jpg" alt="profile1" width="80px"></div><div class="ui-block-b"><h1>David</h1>2 miles away</div></div></a><a class="ui-btn" href="profile2.html"><div class="ui-grid-a"><div class="ui-block-a"><img src="pics/t2.jpg" alt="profile2" width="80px"></div><div class="ui-block-b"><h1>Christi</h1>1 mile away</div></div></a><a class="ui-btn" href="profile3.html"><div class="ui-grid-a"><div class="ui-block-a"><img src="pics/t3.jpg" alt="profile3" width="80px"></div><div class="ui-block-b"><h1>Tomo</h1>3 miles away</div></div></a></div>';
-  $(".search-results").html(search_results_html);
 }
 
 function message(messageIndex){

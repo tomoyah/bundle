@@ -23,8 +23,8 @@
 <div data-role="page" id="profile4">
      <script>
         $( document ).ready(function() {
-            if(!rated[0] && matchedWith[0]){
-                $("#ratebutton1").show();
+            if(!rated[3] && matchedWith[3]){
+                $("#ratebutton4").show();
             }
         });
     </script>
@@ -83,7 +83,7 @@
                       <option value="4">4</option>
                       <option value="5">5</option>
                     </select>
-                     <a class="ui-btn" href="#ratingpopup" id="ratebutton1" data-rel="popup" data-transition="slideup" style="padding: 0px; display: none" data-position-to="window">Rate</a>
+                     <a class="ui-btn" href="#ratingpopup" id="ratebutton4" data-rel="popup" data-transition="slideup" style="padding: 0px; display: none" data-position-to="window">Rate</a>
 
                     <!--Plugin-->
                     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
@@ -112,7 +112,7 @@
                                 </select>
                             </div>
                         <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" data-rel="back"> Cancel </a>
-                        <a href="#" data-rel="back" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" data-rel="back" onclick="rate(1)"> Submit </a>
+                        <a href="#" data-rel="back" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" data-rel="back" onclick="rate(4)"> Submit </a>
                     </div>
                 2 miles away
               <p class = "userpref"> Splitting a Room </p>
@@ -120,7 +120,7 @@
             </div>
         </div>
     </div>
-    
+
      <div data-role="popup" id="biopopup1" style="max-width:400px; font-size:15px" data-overlay-theme="b" data-theme="b">
         <div data-role="header" data-theme="a">
         <h1>Bio</h1>
@@ -134,7 +134,7 @@
             <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back"> Go Back </a>
         </div>
     </div>
-    
+
     <div data-role="content">
         <a class="ui-btn" onclick="toggleUnmatch(4); match(4)" href="#popup" id="buttonProfile4" data-rel="popup" data-transition="slideup">Match</a>
         <a class="ui-btn" onclick="message(4)" href="chat4.html">Message</a>
